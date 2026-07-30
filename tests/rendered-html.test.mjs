@@ -29,10 +29,16 @@ test("server-renders the complete mathematics portfolio", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Maya Rao — Mathematics Portfolio<\/title>/i);
-  assert.match(html, /A small pattern is an invitation to ask/);
+  assert.match(html, /High school student interested in number theory/);
   assert.match(html, /Writings &amp; Publications/);
-  assert.match(html, /Curriculum vitae/);
-  assert.match(html, /Teaching materials/);
+  assert.match(html, /Mathematical Activities/);
+  assert.match(html, /School/);
+  assert.match(html, /Olympiad/);
+  assert.match(html, /<details class="nav-disclosure">/);
   assert.match(html, /Skip to main content/);
+  assert.doesNotMatch(
+    html,
+    /Currently exploring|Working principle|Reuse &amp; corrections|Read abstract|View outline/,
+  );
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
 });
