@@ -4,37 +4,35 @@ import "./globals.css";
 
 export async function generateMetadata(): Promise<Metadata> {
   const requestHeaders = await headers();
-  const host =
-    requestHeaders.get("host") ??
-    "maya-rao-math-portfolio.ipsanand.chatgpt.site";
+  const host = requestHeaders.get("host") ?? "localhost:3000";
   const protocol = host.startsWith("localhost") ? "http" : "https";
   const previewImage = `${protocol}://${host}/og.png`;
 
   return {
-    title: "Maya Rao — Mathematics Portfolio",
+    title: "Adhiraj Singh Anand — Mathematics Portfolio",
     description:
-      "Writings, publications, handouts, and academic work by student mathematician Maya Rao.",
-    authors: [{ name: "Maya Rao" }],
+      "Research, writings, honors, and mathematical handouts by Adhiraj Singh Anand.",
+    authors: [{ name: "Adhiraj Singh Anand" }],
     openGraph: {
-      title: "Maya Rao — Mathematics Portfolio",
+      title: "Adhiraj Singh Anand — Mathematics Portfolio",
       description:
-        "Expository writing, mathematical handouts, and selected academic work.",
+        "Research manuscripts, mathematical handouts, honors, and selected academic work.",
       type: "website",
-      siteName: "Maya Rao — Mathematics Portfolio",
+      siteName: "Adhiraj Singh Anand — Mathematics Portfolio",
       images: [
         {
           url: previewImage,
-          width: 1733,
-          height: 907,
-          alt: "Maya Rao — Mathematics Portfolio",
+          width: 1731,
+          height: 909,
+          alt: "Adhiraj Singh Anand — Mathematics Portfolio",
         },
       ],
     },
     twitter: {
       card: "summary_large_image",
-      title: "Maya Rao — Mathematics Portfolio",
+      title: "Adhiraj Singh Anand — Mathematics Portfolio",
       description:
-        "Expository writing, mathematical handouts, and selected academic work.",
+        "Research manuscripts, mathematical handouts, honors, and selected academic work.",
       images: [previewImage],
     },
   };
