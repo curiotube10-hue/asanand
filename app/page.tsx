@@ -14,11 +14,29 @@ const researchWriting = [
     meta: "In progress · 2026—",
   },
   {
-    title: "Additive Bases",
+    title: "Additive Bases (Strange Lifts)",
     description:
-      "A three-month team research project for ETEAM in Lyon. Represented India on a full scholarship; the team placed second overall.",
+      "A three-month team research project for ETEAM in Lyon. Represented India on a full scholarship; the team placed second overall. The report and presentation below include my work from the tournament.",
     meta: "ETEAM · June 2025",
-    href: "https://eteam.tfjm.org/",
+    resources: [
+      {
+        label: "Strange Lifts — report",
+        detail: "14 pages",
+        href: "/pdfs/eteam-2025-strange-lifts-report.pdf",
+        type: "PDF",
+      },
+      {
+        label: "Strange Lifts — presentation",
+        detail: "15 slides",
+        href: "/pdfs/eteam-2025-strange-lifts-presentation.pdf",
+        type: "PDF",
+      },
+      {
+        label: "ETEAM website",
+        href: "https://eteam.tfjm.org/",
+        type: "Website",
+      },
+    ],
   },
 ] as const;
 
@@ -75,15 +93,15 @@ const researchAndPrograms = [
   },
   {
     date: "2026",
-    title: "Ross Mathematics Program, Otterbein University",
+    title: "Ross Mathematics Program",
     description:
-      "Participant in the summer proof-based mathematics program in Westerville, Ohio.",
+      "Participant in the summer proof-based mathematics program, studying Elliptic Curves and Uniform Distribution.",
   },
   {
     date: "2024—25",
     title: "Lodha Genius Programme, Ashoka University",
     description:
-      "Two-year full-scholarship mathematics enrichment program focused on olympiad problem solving; selected through the program for ETEAM.",
+      "Two-year full-scholarship mathematics enrichment program focused on olympiad problem solving. Selected through the program for ETEAM.",
   },
 ] as const;
 
@@ -157,24 +175,52 @@ export default function Home() {
 
         <main id="main-content">
           <section id="home" className="section home-section">
-            <h1>Adhiraj Singh Anand</h1>
-            <p className="subtitle">
-              Grade 12G student at Delhi Public School R.K. Puram interested in
-              number theory, combinatorics, and olympiad mathematics.
-            </p>
-            <p>
-              I am a high school student based in Gurugram, India. My current
-              work concerns compound sequences, linear Diophantine problems
-              arising from second-order recurrences, and Bertrand-type bounds
-              in imaginary quadratic integer rings.
-            </p>
-            <p className="contact-line">
-              <a href="mailto:curiotube10@gmail.com">Email</a>
-              <span aria-hidden="true">·</span>
-              <a href="tel:+919319600311">+91 93196 00311</a>
-              <span aria-hidden="true">·</span>
-              <a href="#cv">CV</a>
-            </p>
+            <div className="home-profile">
+              <div>
+                <h1>Adhiraj Singh Anand</h1>
+                <p>
+                  Hello! I am Adhiraj Singh Anand, a high school student based
+                  in Gurugram. I&apos;m broadly interested in Number Theory.
+                </p>
+                <p>
+                  My current work revolves around the Frobenius coin and
+                  Postage Stamp problems, and some Algebraic number theory.
+                </p>
+                <p>
+                  When I&apos;m not doing math, I love cubing (3x3, 5x5 and FMC)
+                  and playing Geoguessr.
+                </p>
+                <p className="contact-line">
+                  <a href="mailto:curiotube10@gmail.com">Email</a>
+                  <span aria-hidden="true">·</span>
+                  <a href="tel:+919319600311">+91 93196 00311</a>
+                  <span aria-hidden="true">·</span>
+                  <a href="#cv">CV</a>
+                </p>
+              </div>
+              <img
+                className="portrait"
+                src="/adhiraj-singh-anand.png"
+                alt="Adhiraj Singh Anand"
+                width="620"
+                height="696"
+              />
+            </div>
+
+            <aside className="math-joke" aria-labelledby="math-joke-title">
+              <p id="math-joke-title" className="joke-title">
+                My paltry attempt at a mathematical joke
+              </p>
+              <p>
+                <strong>Number Theorist:</strong> “I just spent ten years and a
+                global network of supercomputers to discover a new
+                40-million-digit Mersenne prime!”
+              </p>
+              <p>
+                <strong>Group Theorist:</strong> “Who cares? Up to isomorphism,
+                it generates the exact same cyclic group as the number 3.”
+              </p>
+            </aside>
           </section>
 
           <section id="writings" className="section">
@@ -195,6 +241,22 @@ export default function Home() {
                     . {writing.description}{" "}
                     <span className="item-meta">({writing.meta})</span>
                   </p>
+                  {"resources" in writing ? (
+                    <ul className="resource-links">
+                      {writing.resources.map((resource) => (
+                        <li key={resource.href}>
+                          <a href={resource.href}>{resource.label}</a>
+                          {"detail" in resource ? (
+                            <span className="item-meta">
+                              {" "}
+                              · {resource.detail}
+                            </span>
+                          ) : null}{" "}
+                          <span className="file-label">{resource.type}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  ) : null}
                 </li>
               ))}
             </ol>
@@ -223,7 +285,9 @@ export default function Home() {
 
             <h3>Academic Record</h3>
             <ul className="plain-list">
-              <li>CBSE Class XI: 89.6% aggregate.</li>
+              <li>
+                CBSE Class XI: 89.6% aggregate; Mathematics 100/100.
+              </li>
               <li>
                 CBSE Class X: 94.8% aggregate; Mathematics 100/100, French
                 99/100, and Science 97/100.

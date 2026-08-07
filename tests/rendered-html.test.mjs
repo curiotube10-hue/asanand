@@ -5,6 +5,8 @@ import test from "node:test";
 const pdfFiles = [
   "basic-inequalities-olympiad.pdf",
   "complex-bash.pdf",
+  "eteam-2025-strange-lifts-presentation.pdf",
+  "eteam-2025-strange-lifts-report.pdf",
   "expansions-using-calculus.pdf",
   "geometric-bertrand-imaginary-quadratic-rings.pdf",
   "what-are-matrices-really.pdf",
@@ -41,14 +43,45 @@ test("server-renders the complete mathematics portfolio", async () => {
     html,
     /<title>Adhiraj Singh Anand — Mathematics Portfolio<\/title>/i,
   );
-  assert.match(html, /Grade 12G student at Delhi Public School R\.K\. Puram/);
+  assert.match(
+    html,
+    /Hello! I am Adhiraj Singh Anand, a high school student based in Gurugram\./,
+  );
+  assert.match(html, /broadly interested in Number Theory\./);
+  assert.match(
+    html,
+    /My current work revolves around the Frobenius coin and Postage Stamp problems, and some Algebraic number theory\./,
+  );
+  assert.match(
+    html,
+    /I love cubing \(3x3, 5x5 and FMC\) and playing Geoguessr\./,
+  );
+  assert.match(
+    html,
+    /src="\/adhiraj-singh-anand\.png" alt="Adhiraj Singh Anand"/,
+  );
+  assert.match(html, /My paltry attempt at a mathematical joke/);
+  assert.match(html, /40-million-digit Mersenne prime/);
+  assert.match(html, /Up to isomorphism/);
   assert.match(html, /Writings &amp; Publications/);
   assert.match(html, /Mathematics Competitions &amp; Honors/);
   assert.match(html, /Postage Stamp Problem and Compound Sequences/);
+  assert.match(html, /Mathematics 100\/100/);
+  assert.match(html, /Elliptic Curves and Uniform Distribution/);
+  assert.match(html, /Selected through the program for ETEAM\./);
   assert.match(
     html,
     /href="\/pdfs\/geometric-bertrand-imaginary-quadratic-rings\.pdf"/,
   );
+  assert.match(
+    html,
+    /href="\/pdfs\/eteam-2025-strange-lifts-presentation\.pdf"/,
+  );
+  assert.match(
+    html,
+    /href="\/pdfs\/eteam-2025-strange-lifts-report\.pdf"/,
+  );
+  assert.match(html, /href="https:\/\/eteam\.tfjm\.org\/"/);
   assert.match(
     html,
     /href="\/pdfs\/basic-inequalities-olympiad\.pdf"/,
@@ -62,7 +95,7 @@ test("server-renders the complete mathematics portfolio", async () => {
   assert.match(html, /Skip to main content/);
   assert.doesNotMatch(
     html,
-    /Currently exploring|Working principle|Reuse &amp; corrections|Read abstract|View outline|Selected Coursework/,
+    /Currently exploring|Working principle|Reuse &amp; corrections|Read abstract|View outline|Selected Coursework|Otterbein/,
   );
   assert.doesNotMatch(
     html,
@@ -82,4 +115,14 @@ test("all linked portfolio PDFs are present and valid", async () => {
       `${filename} is not a valid PDF`,
     );
   }
+});
+
+test("the chosen portrait asset is present and valid", async () => {
+  const portrait = await readFile(
+    new URL("../public/adhiraj-singh-anand.png", import.meta.url),
+  );
+  assert.deepEqual(
+    [...portrait.subarray(0, 8)],
+    [137, 80, 78, 71, 13, 10, 26, 10],
+  );
 });
