@@ -63,7 +63,21 @@ test("server-renders the complete mathematics portfolio", async () => {
   assert.match(html, /My paltry attempt at a mathematical joke/);
   assert.match(html, /40-million-digit Mersenne prime/);
   assert.match(html, /Up to isomorphism/);
+  assert.doesNotMatch(html, /School Cricket Team|Fast bowler/);
   assert.match(html, /Writings &amp; Publications/);
+  assert.match(html, /Bertrand’s postulate asserts that for every/);
+  assert.match(html, /This problem is set in an infinitely tall building/);
+  assert.equal(
+    html.match(/<details class="abstract-disclosure">/g)?.length,
+    2,
+  );
+  assert.match(html, /data-latex="B_\{\\tau\}/);
+  assert.match(html, /mathjax@3\/es5\/tex-mml-chtml\.js/);
+  assert.match(html, /<details id="cv" class="section cv-disclosure">/);
+  assert.doesNotMatch(
+    html,
+    /<details id="cv" class="section cv-disclosure" open/,
+  );
   assert.match(html, /Mathematics Competitions &amp; Honors/);
   assert.match(html, /Postage Stamp Problem and Compound Sequences/);
   assert.match(html, /Mathematics 100\/100/);

@@ -1,3 +1,13 @@
+import CvDisclosure from "./cv-disclosure";
+
+function InlineMath({ children }: { children: string }) {
+  return (
+    <span className="math-tex" data-latex={children}>
+      {`\\(${children}\\)`}
+    </span>
+  );
+}
+
 const researchWriting = [
   {
     title:
@@ -6,6 +16,25 @@ const researchWriting = [
       "A research manuscript establishing a geometric Bertrand-type result using prime distribution in annular sectors.",
     meta: "Research draft · August 2026 · 10 pages",
     href: "/pdfs/geometric-bertrand-imaginary-quadratic-rings.pdf",
+    abstract: (
+      <>
+        Bertrand’s postulate asserts that for every{" "}
+        <InlineMath>{"n > 1"}</InlineMath>, there exists a rational prime{" "}
+        <InlineMath>p</InlineMath> with <InlineMath>{"n < p < 2n"}</InlineMath>.
+        Fixing an integral basis <InlineMath>{"(1,\\tau)"}</InlineMath>, we
+        define a region{" "}
+        <InlineMath>{"B_{\\tau}(\\alpha,(1+c)\\alpha)"}</InlineMath> using
+        coordinate-wise inequalities and norm bounds. Under a thickness
+        condition preventing the normalized basis coordinates of{" "}
+        <InlineMath>{"\\alpha"}</InlineMath> from approaching either coordinate
+        axis, we prove that{" "}
+        <InlineMath>{"B_{\\tau}(\\alpha,(1+c)\\alpha)"}</InlineMath> contains a
+        prime element for large enough <InlineMath>{"N(\\alpha)"}</InlineMath>.
+        The proof identifies an annular sector of uniform angular and radial
+        width in the scaled region and applies an asymptotic angular prime
+        distribution theorem for imaginary quadratic rings.
+      </>
+    ),
   },
   {
     title: "The Postage Stamp Problem and Compound Sequences",
@@ -18,6 +47,22 @@ const researchWriting = [
     description:
       "A three-month team research project for ETEAM in Lyon. Represented India on a full scholarship; the team placed second overall. The report and presentation below include my work from the tournament.",
     meta: "ETEAM · June 2025",
+    abstract: (
+      <>
+        This problem is set in an infinitely tall building, with our
+        protagonists Alice and Bob on the ground floor and the{" "}
+        <InlineMath>N</InlineMath>th floor, respectively. Alice can board a lift
+        and go up <InlineMath>{"a_i"}</InlineMath> floors, where{" "}
+        <InlineMath>{"a_i \\in A"}</InlineMath>. The problem revolves around
+        approximating the function <InlineMath>{"d_A(N)"}</InlineMath>, which
+        measures the minimum number of steps Alice must take to reach Bob. We
+        find global bounds on <InlineMath>{"d_A(N)"}</InlineMath>, approximate
+        it for finite <InlineMath>A</InlineMath>, determine when it is
+        unbounded, investigate <InlineMath>{"d_{A_t}(N)"}</InlineMath>, consider{" "}
+        <InlineMath>A</InlineMath> as the set of Fibonacci numbers, and suggest
+        and explore research directions.
+      </>
+    ),
     resources: [
       {
         label: "Strange Lifts — report",
@@ -202,8 +247,8 @@ export default function Home() {
                 className="portrait"
                 src="/adhiraj-singh-anand.png"
                 alt="Adhiraj Singh Anand"
-                width="620"
-                height="696"
+                width="1069"
+                height="1471"
               />
             </div>
 
@@ -257,13 +302,20 @@ export default function Home() {
                       ))}
                     </ul>
                   ) : null}
+                  {"abstract" in writing ? (
+                    <details className="abstract-disclosure">
+                      <summary>Abstract</summary>
+                      <div className="abstract-body">
+                        <p>{writing.abstract}</p>
+                      </div>
+                    </details>
+                  ) : null}
                 </li>
               ))}
             </ol>
           </section>
 
-          <section id="cv" className="section">
-            <h2>CV</h2>
+          <CvDisclosure>
 
             <h3>Education</h3>
             <div className="cv-list">
@@ -333,10 +385,6 @@ export default function Home() {
                 inequalities, and represented the school at interschool
                 competitions.
               </li>
-              <li>
-                <strong>School Cricket Team.</strong> Fast bowler for Heritage
-                Xperiential Learning School.
-              </li>
             </ul>
 
             <h3>Technical Tools</h3>
@@ -347,7 +395,7 @@ export default function Home() {
               DELF B1 French certification. Other interests include Rubik’s
               Cube, programming, and GeoGuessr.
             </p>
-          </section>
+          </CvDisclosure>
 
           <section id="handouts" className="section">
             <h2>Handouts</h2>
