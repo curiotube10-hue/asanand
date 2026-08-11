@@ -1,5 +1,10 @@
 import CvDisclosure from "./cv-disclosure";
 
+export const dynamic = "force-static";
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+const publicUrl = (path: string) => `${basePath}${path}`;
+
 function InlineMath({ children }: { children: string }) {
   return (
     <span className="math-tex" data-latex={children}>
@@ -15,7 +20,7 @@ const researchWriting = [
     description:
       "A research manuscript establishing a geometric Bertrand-type result using prime distribution in annular sectors.",
     meta: "Research draft · August 2026 · 10 pages",
-    href: "/pdfs/geometric-bertrand-imaginary-quadratic-rings.pdf",
+    href: publicUrl("/pdfs/geometric-bertrand-imaginary-quadratic-rings.pdf"),
     abstract: (
       <>
         Bertrand’s postulate asserts that for every{" "}
@@ -67,13 +72,13 @@ const researchWriting = [
       {
         label: "Strange Lifts — report",
         detail: "14 pages",
-        href: "/pdfs/eteam-2025-strange-lifts-report.pdf",
+        href: publicUrl("/pdfs/eteam-2025-strange-lifts-report.pdf"),
         type: "PDF",
       },
       {
         label: "Strange Lifts — presentation",
         detail: "15 slides",
-        href: "/pdfs/eteam-2025-strange-lifts-presentation.pdf",
+        href: publicUrl("/pdfs/eteam-2025-strange-lifts-presentation.pdf"),
         type: "PDF",
       },
       {
@@ -158,12 +163,12 @@ const handoutGroups = [
       {
         title: "What Are Matrices — Really?",
         meta: "3 pages · April 2026",
-        href: "/pdfs/what-are-matrices-really.pdf",
+        href: publicUrl("/pdfs/what-are-matrices-really.pdf"),
       },
       {
         title: "Expansions Using Calculus",
         meta: "4 pages · April 2026",
-        href: "/pdfs/expansions-using-calculus.pdf",
+        href: publicUrl("/pdfs/expansions-using-calculus.pdf"),
       },
     ],
   },
@@ -174,12 +179,12 @@ const handoutGroups = [
       {
         title: "Basic Inequalities in Olympiad Problems",
         meta: "6 pages · June 2025",
-        href: "/pdfs/basic-inequalities-olympiad.pdf",
+        href: publicUrl("/pdfs/basic-inequalities-olympiad.pdf"),
       },
       {
         title: "Complex Bash",
         meta: "9 pages · August 2026",
-        href: "/pdfs/complex-bash.pdf",
+        href: publicUrl("/pdfs/complex-bash.pdf"),
       },
     ],
   },
@@ -245,7 +250,7 @@ export default function Home() {
               </div>
               <img
                 className="portrait"
-                src="/adhiraj-singh-anand.png"
+                src={publicUrl("/adhiraj-singh-anand.png")}
                 alt="Adhiraj Singh Anand"
                 width="1069"
                 height="1471"
