@@ -72,7 +72,6 @@ test("server-renders the complete mathematics portfolio", async () => {
     2,
   );
   assert.match(html, /data-latex="B_\{\\tau\}/);
-  assert.match(html, /mathjax@3\/es5\/tex-mml-chtml\.js/);
   assert.match(html, /<details id="cv" class="section cv-disclosure">/);
   assert.doesNotMatch(
     html,
@@ -116,6 +115,16 @@ test("server-renders the complete mathematics portfolio", async () => {
     /Maya Rao|Hello! I am Maya|Northbridge|student@example\.com/,
   );
   assert.doesNotMatch(html, /codex-preview|react-loading-skeleton/i);
+});
+
+test("loads MathJax only after hydration", async () => {
+  const loader = await readFile(
+    new URL("../app/mathjax-loader.tsx", import.meta.url),
+    "utf8",
+  );
+  assert.match(loader, /^"use client";/);
+  assert.match(loader, /useEffect/);
+  assert.match(loader, /mathjax@3\/es5\/tex-mml-chtml\.js/);
 });
 
 test("all linked portfolio PDFs are present and valid", async () => {
