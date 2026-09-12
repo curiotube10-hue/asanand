@@ -16,10 +16,10 @@ function InlineMath({ children }: { children: string }) {
 const researchWriting = [
   {
     title:
-      "A Geometric Analogue of Bertrand’s Postulate over Imaginary Quadratic Rings",
+      "An Asymptotic Geometric Analogue of Bertrand’s Postulate in Imaginary Quadratic Rings",
     description:
-      "A research manuscript establishing a geometric Bertrand-type result using prime distribution in annular sectors.",
-    meta: "Research draft · August 2026 · 10 pages",
+      "Authored a mathematical manuscript examining Bertrand-type prime-existence questions in imaginary quadratic rings. Developed a geometric result using asymptotic angular distribution of prime elements under a thickness condition; work developed with guidance from Dr. Sagar Shrivastava, Postdoctoral Research Associate at Iowa State University.",
+    meta: "2025–present · Manuscript under review, Rose-Hulman Undergraduate Mathematics Journal",
     href: publicUrl("/pdfs/geometric-bertrand-imaginary-quadratic-rings.pdf"),
     abstract: (
       <>
@@ -42,16 +42,16 @@ const researchWriting = [
     ),
   },
   {
-    title: "The Postage Stamp Problem and Compound Sequences",
+    title: "Apéry Kunz Theory for numerical semigroups of fixed multiplicity",
     description:
-      "In-progress research on compound sequences; made significant progress on an open linear Diophantine problem involving second-order recurrences, under the guidance of Prof. Amitabha Tripathi at IIT Delhi.",
-    meta: "In progress · 2026—",
+      "Developed a general framework for classifying symmetric and pseudo-symmetric numerical semigroups of any fixed multiplicity, refining by frobenius number modulo multiplicity, embedding dimension and minimal generating set. Authored a manuscript establishing finite algorithmic classifications and conductor-counting formulas, with explicit classifications at multiplicities 6 and 7 developed using AI-assisted symbolic exploration and computation, followed by independent computational verification. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
+    meta: "2026-present",
   },
   {
-    title: "Additive Bases (Strange Lifts)",
+    title: "Additive Bases in Number Theory - ETEAM, Lyon",
     description:
-      "A three-month team research project for ETEAM in Lyon. Represented India on a full scholarship; the team placed second overall. The report and presentation below include my work from the tournament.",
-    meta: "ETEAM · June 2025",
+      "Collaborated for more than three months on constructions and properties of additive bases and presented the team's findings at the international tournament. Investigated the finiteness of the order of additive basis, including polynomials, powers of t, and first and second order linear recurrences. Subsequently mentored candidates and selected the next ETEAM team through Ashoka University.",
+    meta: "2025",
     abstract: (
       <>
         This problem is set in an infinitely tall building, with our
@@ -88,70 +88,123 @@ const researchWriting = [
       },
     ],
   },
+  {
+    title: "Formalisation of Topology in Lean",
+    description:
+      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean’s Math Library.",
+    meta: "2025-26",
+  },
 ] as const;
 
 const honors = [
   {
     date: "2026",
-    title: "Indian National Mathematical Olympiad",
+    title: "Indian National Mathematical Olympiad (INMO)",
     description:
-      "INMO Merit Awardee; qualified through IOQM and RMO. Scored 21/102, with a reported median of 2 among 1,071 participants.",
+      "Qualified for INMO through IOQM and RMO; attended the INMO training camp; scored 21/102 at the national stage (median score: 2; 1,071 participants).",
   },
   {
     date: "2026",
-    title: "LIMIT, Indian Statistical Institute Bengaluru",
+    title: "LIMIT, Indian Statistical Institute, Bangalore",
     description:
       "Ranked 15th nationally, selected for the LIMIT Mathematics Camp, and attended in June 2026.",
   },
   {
     date: "2026",
-    title: "American Invitational Mathematics Examination",
-    description: "Qualified for AIME through the AMC 12 pathway.",
+    title: "American Invitational Mathematics Examination (AIME)",
+    description:
+      "Qualified for and participated in AIME after scoring 96/150 in AMC 12A.",
   },
   {
     date: "2026",
     title: "Euclid Mathematics Contest",
     description:
-      "Scored 78/100, received a Certificate of Distinction, and placed 1,569th globally.",
-  },
-  {
-    date: "2026",
-    title: "Purple Comet! Math Meet",
-    description:
-      "The team ranked 8th in India out of 60 teams and 98th globally out of 399 teams.",
-  },
-] as const;
-
-const researchAndPrograms = [
-  {
-    date: "2026—",
-    title: "Postage Stamp Problem Research, IIT Delhi",
-    description:
-      "Researched the Postage Stamp Problem for compound sequences and made significant progress on an open linear Diophantine problem involving second-order recurrences under Prof. Amitabha Tripathi. Invited to a four-month number theory course at IIT Delhi.",
-  },
-  {
-    date: "2025—",
-    title: "Bertrand-Type Bounds in Imaginary Quadratic Rings",
-    description:
-      "Developing explicit geometric bounds for Bertrand-type questions over rings of integers of imaginary quadratic fields, with guidance from Sagar Srivastava.",
+      "Scored 78/100; ranked 1,569 globally among 23,985 contestants; received a Certificate of Distinction.",
   },
   {
     date: "2025",
-    title: "ETEAM, Lyon — Additive Bases",
+    title:
+      "European Tournament of Enthusiastic Apprentice Mathematicians (ETEAM), Lyon",
     description:
-      "Represented India with a full scholarship after three months of team research; presented the work and placed second overall.",
+      "Represented India on a full scholarship; team placed 2nd overall.",
   },
   {
-    date: "2026",
-    title: "Ross Mathematics Program",
+    date: "2025",
+    title: "Purple Comet Mathematics Competition",
     description:
-      "Participant in the summer proof-based mathematics program, studying Elliptic Curves and Uniform Distribution.",
+      "Team ranked 8th in India (of 60 teams) and 98th globally (of 399 teams).",
+  },
+] as const;
+
+const researchAndExposition = [
+  {
+    date: "2025–present",
+    title:
+      "An Asymptotic Geometric Analogue of Bertrand’s Postulate in Imaginary Quadratic Rings",
+    subline:
+      "Manuscript under review, Rose-Hulman Undergraduate Mathematics Journal",
+    bullets: [
+      "Authored a mathematical manuscript examining Bertrand-type prime-existence questions in imaginary quadratic rings.",
+      "Developed a geometric result using asymptotic angular distribution of prime elements under a thickness condition; work developed with guidance from Dr. Sagar Shrivastava, Postdoctoral Research Associate at Iowa State University.",
+    ],
   },
   {
-    date: "2024—25",
-    title: "Lodha Genius Programme, Ashoka University",
-    description:
-      "Two-year full-scholarship mathematics enrichment program focused on olympiad problem solving. Selected through the program for ETEAM.",
+    date: "2026-present",
+    title: "Apéry Kunz Theory for numerical semigroups of fixed multiplicity",
+    bullets: [
+      "Developed a general framework for classifying symmetric and pseudo-symmetric numerical semigroups of any fixed multiplicity, refining by frobenius number modulo multiplicity, embedding dimension and minimal generating set.",
+      "Authored a manuscript establishing finite algorithmic classifications and conductor-counting formulas, with explicit classifications at multiplicities 6 and 7 developed using AI-assisted symbolic exploration and computation, followed by independent computational verification. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
+    ],
+  },
+  {
+    date: "2025",
+    title: "Additive Bases in Number Theory - ETEAM, Lyon",
+    bullets: [
+      "Collaborated for more than three months on constructions and properties of additive bases and presented the team's findings at the international tournament.",
+      "Investigated the finiteness of the order of additive basis, including polynomials, powers of t, and first and second order linear recurrences.",
+      "Subsequently mentored candidates and selected the next ETEAM team through Ashoka University.",
+    ],
+  },
+  {
+    date: "2025-26",
+    title: "Formalisation of Topology in Lean",
+    bullets: [
+      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean’s Math Library.",
+    ],
+  },
+] as const;
+
+const mathematicsPrograms = [
+  {
+    date: "Summer 2026",
+    title: "Ross Mathematics Program, Otterbein University, Ohio",
+    bullets: [
+      "Completed a six-week intensive program centered on number theory, proof-writing and collaborative problem solving; took advanced courses in Elliptic Curves, Point-Set Topology, and the Normal Distribution; delivered a guest lecture on the Postage Stamp Problem.",
+    ],
+  },
+  {
+    date: "2024–2025",
+    title: "Lodha Genius Program, Ashoka University",
+    bullets: [
+      "Received a full scholarship for two years of advanced mathematics, including number theory, combinatorics, geometry, group theory and quadratic fields.",
+      "Selected through the program to represent India at ETEAM; developed a mathematical exposition on splitting, inertia, and ramification in quadratic fields.",
+    ],
+  },
+] as const;
+
+const mathematicalCommunity = [
+  {
+    title: "MatSoc, Delhi Public School R.K. Puram",
+    bullets: [
+      "Participated in weekly problem-solving sessions; prepared notes and problem sets on complex-coordinate geometry, inequalities and functional equations.",
+    ],
+  },
+  {
+    date: "2026-present",
+    title: "Math Circles, Cheenta",
+    bullets: [
+      "Led over 12 problem-solving sessions with students, focusing on an AMC level warm-up and a previous TC or SL problem afterwards. Helped at least 5 people qualify for the regional math Olympiad.",
+    ],
   },
 ] as const;
 
@@ -241,9 +294,11 @@ export default function Home() {
                   and playing Geoguessr.
                 </p>
                 <p className="contact-line">
-                  <a href="mailto:curiotube10@gmail.com">Email</a>
-                  <span aria-hidden="true">·</span>
                   <a href="tel:+919319600311">+91 93196 00311</a>
+                  <span aria-hidden="true">·</span>
+                  <a href="mailto:curiotube10@gmail.com">
+                    curiotube10@gmail.com
+                  </a>
                   <span aria-hidden="true">·</span>
                   <a href="#cv">CV</a>
                 </p>
@@ -321,42 +376,60 @@ export default function Home() {
           </section>
 
           <CvDisclosure>
+            <div className="cv-heading">
+              <h3 className="cv-person-name">ADHIRAJ SINGH ANAND</h3>
+              <p className="cv-contact-line">
+                <span>Gurgaon, India</span>
+                <span aria-hidden="true">|</span>
+                <a href="tel:+919319600311">+91 93196 00311</a>
+                <span aria-hidden="true">|</span>
+                <a href="mailto:curiotube10@gmail.com">
+                  curiotube10@gmail.com
+                </a>
+                <span aria-hidden="true">|</span>
+                <a href="https://curiotube10-hue.github.io/asanand/">
+                  Mathematics Portfolio
+                </a>
+              </p>
+            </div>
 
-            <h3>Education</h3>
+            <h3>EDUCATION</h3>
             <div className="cv-list">
               <article className="cv-entry">
-                <p className="cv-date">2025—27</p>
+                <p className="cv-date">Expected May 2027</p>
                 <div>
-                  <h4>Delhi Public School R.K. Puram, New Delhi</h4>
-                  <p>CBSE, Grade 12G; expected graduation 2027.</p>
+                  <h4>Delhi Public School, R.K. Puram, New Delhi</h4>
+                  <p>CBSE Class XII, expected May 2027</p>
+                  <p>
+                    Mathematics, Physics, Chemistry, Computer Science, English
+                    &amp; French
+                  </p>
+                  <p>CBSE Class XI (2026): 89.6% aggregate.</p>
                 </div>
               </article>
               <article className="cv-entry">
-                <p className="cv-date">2014—25</p>
+                <p className="cv-date">2025</p>
                 <div>
-                  <h4>Heritage Xperiential Learning School, Gurugram</h4>
-                  <p>Primary and secondary education.</p>
+                  <h4>Heritage Xperiential Learning School, Gurgaon</h4>
+                  <p>CBSE Class X, 2025</p>
+                  <p>
+                    94.8% aggregate; Mathematics 100/100, French 99/100 and
+                    Science 97/100
+                  </p>
                 </div>
               </article>
             </div>
 
-            <h3>Academic Record</h3>
+            <h4 className="cv-testing-title">Academic testing:</h4>
             <ul className="plain-list">
-              <li>
-                CBSE Class XI: 89.6% aggregate; Mathematics 100/100.
-              </li>
-              <li>
-                CBSE Class X: 94.8% aggregate; Mathematics 100/100, French
-                99/100, and Science 97/100.
-              </li>
-              <li>SAT: 1520, including 790 in Mathematics.</li>
+              <li>SAT 1540 (790 Math, 750 Reading and Writing)</li>
               <li>
                 AP Calculus BC: 5; AP Physics C: Mechanics: 5; AP Statistics:
                 4.
               </li>
             </ul>
 
-            <h3>Mathematics Competitions &amp; Honors</h3>
+            <h3>MATHEMATICAL HONORS &amp; COMPETITIONS</h3>
             <div className="cv-list">
               {honors.map((honor) => (
                 <article className="cv-entry" key={honor.title}>
@@ -369,37 +442,76 @@ export default function Home() {
               ))}
             </div>
 
-            <h3>Research &amp; Mathematical Programs</h3>
+            <h3>RESEARCH &amp; MATHEMATICAL EXPOSITION</h3>
             <div className="cv-list">
-              {researchAndPrograms.map((item) => (
+              {researchAndExposition.map((item) => (
                 <article className="cv-entry" key={item.title}>
                   <p className="cv-date">{item.date}</p>
                   <div>
                     <h4>{item.title}</h4>
-                    <p>{item.description}</p>
+                    {"subline" in item ? (
+                      <p className="cv-subline">{item.subline}</p>
+                    ) : null}
+                    <ul className="plain-list cv-bullets">
+                      {item.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
                   </div>
                 </article>
               ))}
             </div>
 
-            <h3>School Activities</h3>
-            <ul className="plain-list">
-              <li>
-                <strong>MatSoc, DPS R.K. Puram.</strong> Participated in
-                problem-solving sessions, prepared notes on complex bashing and
-                inequalities, and represented the school at interschool
-                competitions.
-              </li>
-            </ul>
+            <h3>SELECTED MATHEMATICS PROGRAMS</h3>
+            <div className="cv-list">
+              {mathematicsPrograms.map((item) => (
+                <article className="cv-entry" key={item.title}>
+                  <p className="cv-date">{item.date}</p>
+                  <div>
+                    <h4>{item.title}</h4>
+                    <ul className="plain-list cv-bullets">
+                      {item.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              ))}
+            </div>
 
-            <h3>Technical Tools</h3>
-            <p>LaTeX, Python, SageMath.</p>
+            <h3>MATHEMATICAL COMMUNITY</h3>
+            <div className="cv-list">
+              {mathematicalCommunity.map((item) => (
+                <article className="cv-entry" key={item.title}>
+                  <p className="cv-date">
+                    {"date" in item ? item.date : ""}
+                  </p>
+                  <div>
+                    <h4>{item.title}</h4>
+                    <ul className="plain-list cv-bullets">
+                      {item.bullets.map((bullet) => (
+                        <li key={bullet}>{bullet}</li>
+                      ))}
+                    </ul>
+                  </div>
+                </article>
+              ))}
+            </div>
 
-            <h3>Additional</h3>
-            <p>
-              DELF B1 French certification. Other interests include Rubik’s
-              Cube, programming, and GeoGuessr.
-            </p>
+            <h3>SKILLS &amp; INTERESTS</h3>
+            <div className="cv-skills">
+              <p>
+                <strong>Technical:</strong> Lean, Python, SageMath and LaTeX
+              </p>
+              <p>
+                <strong>Languages:</strong> English, Hindi and French (DELF B1)
+              </p>
+              <p>
+                <strong>Interests:</strong> Number theory, functional equations,
+                Cricket, Speedcubing, Rubik’s Cube fewest moves solving and
+                GeoGuessr
+              </p>
+            </div>
           </CvDisclosure>
 
           <section id="handouts" className="section">
@@ -433,7 +545,7 @@ export default function Home() {
 
         <footer className="site-footer">
           <p>
-            Adhiraj Singh Anand · Gurugram, India ·{" "}
+            Adhiraj Singh Anand · Gurgaon, India ·{" "}
             <a href="mailto:curiotube10@gmail.com">
               curiotube10@gmail.com
             </a>

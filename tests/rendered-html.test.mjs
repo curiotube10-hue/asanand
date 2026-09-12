@@ -63,6 +63,10 @@ test("server-renders the complete mathematics portfolio", async () => {
   assert.match(html, /My paltry attempt at a mathematical joke/);
   assert.match(html, /40-million-digit Mersenne prime/);
   assert.match(html, /Up to isomorphism/);
+  assert.match(
+    html,
+    /<p class="contact-line">[\s\S]*?href="mailto:curiotube10@gmail\.com">\s*curiotube10@gmail\.com\s*<\/a>/,
+  );
   assert.doesNotMatch(html, /School Cricket Team|Fast bowler/);
   assert.match(html, /Writings &amp; Publications/);
   assert.match(html, /Bertrand’s postulate asserts that for every/);
@@ -77,11 +81,40 @@ test("server-renders the complete mathematics portfolio", async () => {
     html,
     /<details id="cv" class="section cv-disclosure" open/,
   );
-  assert.match(html, /Mathematics Competitions &amp; Honors/);
-  assert.match(html, /Postage Stamp Problem and Compound Sequences/);
-  assert.match(html, /Mathematics 100\/100/);
-  assert.match(html, /Elliptic Curves and Uniform Distribution/);
-  assert.match(html, /Selected through the program for ETEAM\./);
+  assert.match(html, /MATHEMATICAL HONORS &amp; COMPETITIONS/);
+  assert.match(
+    html,
+    /An Asymptotic Geometric Analogue of Bertrand’s Postulate in Imaginary Quadratic Rings/,
+  );
+  assert.match(
+    html,
+    /Apéry Kunz Theory for numerical semigroups of fixed multiplicity/,
+  );
+  assert.match(html, /Formalisation of Topology in Lean/);
+  assert.match(html, /CBSE Class XI \(2026\): 89\.6% aggregate\./);
+  assert.match(
+    html,
+    /Mathematics 100\/100, French 99\/100 and Science 97\/100/,
+  );
+  assert.match(html, /SAT 1540 \(790 Math, 750 Reading and Writing\)/);
+  assert.match(html, /96\/150 in AMC 12A/);
+  assert.match(html, /23,985 contestants/);
+  assert.match(
+    html,
+    /European Tournament of Enthusiastic Apprentice Mathematicians \(ETEAM\), Lyon/,
+  );
+  assert.match(html, /Purple Comet Mathematics Competition/);
+  assert.match(
+    html,
+    /Elliptic Curves, Point-Set Topology, and the Normal Distribution/,
+  );
+  assert.match(
+    html,
+    /Selected through the program to represent India at ETEAM/,
+  );
+  assert.match(html, /Math Circles, Cheenta/);
+  assert.match(html, /Lean, Python, SageMath and LaTeX/);
+  assert.match(html, /English, Hindi and French \(DELF B1\)/);
   assert.match(
     html,
     /href="\/pdfs\/geometric-bertrand-imaginary-quadratic-rings\.pdf"/,
@@ -108,7 +141,11 @@ test("server-renders the complete mathematics portfolio", async () => {
   assert.match(html, /Skip to main content/);
   assert.doesNotMatch(
     html,
-    /Currently exploring|Working principle|Reuse &amp; corrections|Read abstract|View outline|Selected Coursework|Otterbein/,
+    /Currently exploring|Working principle|Reuse &amp; corrections|Read abstract|View outline|Selected Coursework|SAT: 1520|INMO Merit Awardee|Elliptic Curves and Uniform Distribution|Primary and secondary education|Grade 12G|Sagar Srivastava/,
+  );
+  assert.doesNotMatch(
+    html,
+    /CBSE Class XI: 89\.6% aggregate; Mathematics 100\/100/,
   );
   assert.doesNotMatch(
     html,
