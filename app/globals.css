@@ -265,6 +265,21 @@ p {
   font-style: italic;
 }
 
+.site-credit {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin: 20px 0 0;
+  color: var(--navy-soft);
+  font-family: var(--sans);
+  font-size: 0.75rem;
+}
+
+.site-credit svg {
+  flex-shrink: 0;
+  color: var(--gold-dark);
+}
+
 .contact-line {
   display: flex;
   flex-wrap: wrap;

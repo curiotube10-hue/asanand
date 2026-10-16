@@ -19,7 +19,7 @@ const researchWriting = [
       "An Asymptotic Geometric Analogue of Bertrand’s Postulate in Imaginary Quadratic Rings",
     description:
       "Authored a mathematical manuscript examining Bertrand-type prime-existence questions in imaginary quadratic rings. Developed a geometric result using asymptotic angular distribution of prime elements under a thickness condition; work developed with guidance from Dr. Sagar Shrivastava, Postdoctoral Research Associate at Iowa State University.",
-    meta: "2025–present · Manuscript under review, Rose-Hulman Undergraduate Mathematics Journal",
+    meta: "2025–2026 · Manuscript under review, Rose-Hulman Undergraduate Mathematics Journal",
     href: publicUrl("/pdfs/geometric-bertrand-imaginary-quadratic-rings.pdf"),
     abstract: (
       <>
@@ -91,7 +91,7 @@ const researchWriting = [
   {
     title: "Formalisation of Topology in Lean",
     description:
-      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean’s Math Library.",
+      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean.",
     meta: "2025-26",
   },
 ] as const;
@@ -138,7 +138,7 @@ const honors = [
 
 const researchAndExposition = [
   {
-    date: "2025–present",
+    date: "2025–2026",
     title:
       "An Asymptotic Geometric Analogue of Bertrand’s Postulate in Imaginary Quadratic Rings",
     subline:
@@ -169,7 +169,7 @@ const researchAndExposition = [
     date: "2025-26",
     title: "Formalisation of Topology in Lean",
     bullets: [
-      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean’s Math Library.",
+      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean.",
     ],
   },
 ] as const;
@@ -194,7 +194,7 @@ const mathematicsPrograms = [
 
 const mathematicalCommunity = [
   {
-    title: "MatSoc, Delhi Public School R.K. Puram",
+    title: "Director, MatSoc, Delhi Public School R.K. Puram",
     bullets: [
       "Participated in weekly problem-solving sessions; prepared notes and problem sets on complex-coordinate geometry, inequalities and functional equations.",
     ],
@@ -212,6 +212,7 @@ const handoutGroups = [
   {
     id: "school-handouts",
     label: "School",
+    description: "Director, Mathematical Society, Delhi Public School, R.K. Puram",
     items: [
       {
         title: "What Are Matrices — Really?",
@@ -222,6 +223,11 @@ const handoutGroups = [
         title: "Expansions Using Calculus",
         meta: "4 pages · April 2026",
         href: publicUrl("/pdfs/expansions-using-calculus.pdf"),
+      },
+      {
+        title: "Limits — Problem Set 2",
+        meta: "3 pages · October 2026",
+        href: publicUrl("/pdfs/limits-problem-set-2.pdf"),
       },
     ],
   },
@@ -282,16 +288,27 @@ export default function Home() {
               <div>
                 <h1>Adhiraj Singh Anand</h1>
                 <p>
-                  Hello! I am Adhiraj Singh Anand, a high school student based
-                  in Gurugram. I&apos;m broadly interested in Number Theory.
+                  Hi! I’m Adhiraj, a high school student at Delhi Public School,
+                  R.K. Puram, living in Gurugram.
                 </p>
                 <p>
-                  My current work revolves around the Frobenius coin and
-                  Postage Stamp problems, and some Algebraic number theory.
+                  My primary interest is mathematics, mostly number theory.
+                  Recently, I’ve been exploring numerical semigroups, the
+                  Frobenius coin problem, and questions about primes in imaginary
+                  quadratic rings. I also enjoy discussing problems with peers
+                  and students and writing handouts that explain the motivation
+                  behind a solution. I’m deeply engaged with 10+ students through
+                  the Cheenta math circles programme and teach Olympiad Algebra
+                  to classes 8–10 as Director of the DPS RKP Mathematical Society.
                 </p>
                 <p>
-                  When I&apos;m not doing math, I love cubing (3x3, 5x5 and FMC)
-                  and playing Geoguessr.
+                  Lately, I’ve also become interested in understanding weather
+                  modelling and how equations can describe something as
+                  complicated as the atmosphere while deciding what to leave
+                  out. GeoGuessr and Delhi’s summers may have something to do
+                  with that. Outside maths, I enjoy cubing, especially FMC,
+                  playing cricket, and spending far too long plonking pins in
+                  GeoGuessr.
                 </p>
                 <p className="contact-line">
                   <a href="tel:+919319600311">+91 93196 00311</a>
@@ -326,6 +343,12 @@ export default function Home() {
                 it generates the exact same cyclic group as the number 3.”
               </p>
             </aside>
+            <p className="site-credit">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6L12 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
+              </svg>
+              <span>Site made with the help of ChatGPT 6.1</span>
+            </p>
           </section>
 
           <section id="writings" className="section">
@@ -399,7 +422,7 @@ export default function Home() {
                 <p className="cv-date">Expected May 2027</p>
                 <div>
                   <h4>Delhi Public School, R.K. Puram, New Delhi</h4>
-                  <p>CBSE Class XII, expected May 2027</p>
+                  <p>CBSE Class XII, expected May 2027 · Predicted: 98.17%</p>
                   <p>
                     Mathematics, Physics, Chemistry, Computer Science, English
                     &amp; French
@@ -525,6 +548,9 @@ export default function Home() {
                 key={group.id}
               >
                 <h3 id={`${group.id}-title`}>{group.label}</h3>
+                {"description" in group ? (
+                  <p className="item-meta">{group.description}</p>
+                ) : null}
                 <ol className="academic-list resource-list">
                   {group.items.map((item) => (
                     <li key={item.title}>

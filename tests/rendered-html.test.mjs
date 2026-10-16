@@ -10,6 +10,7 @@ const pdfFiles = [
   "expansions-using-calculus.pdf",
   "geometric-bertrand-imaginary-quadratic-rings.pdf",
   "what-are-matrices-really.pdf",
+  "limits-problem-set-2.pdf",
 ];
 
 async function render() {
@@ -43,19 +44,16 @@ test("server-renders the complete mathematics portfolio", async () => {
     html,
     /<title>Adhiraj Singh Anand — Mathematics Portfolio<\/title>/i,
   );
-  assert.match(
-    html,
-    /Hello! I am Adhiraj Singh Anand, a high school student based in Gurugram\./,
-  );
-  assert.match(html, /broadly interested in Number Theory\./);
-  assert.match(
-    html,
-    /My current work revolves around the Frobenius coin and Postage Stamp problems, and some Algebraic number theory\./,
-  );
-  assert.match(
-    html,
-    /I love cubing \(3x3, 5x5 and FMC\) and playing Geoguessr\./,
-  );
+  assert.match(html, /Hi! I’m Adhiraj, a high school student at Delhi Public School, R.K. Puram, living in Gurugram\./);
+  assert.match(html, /My primary interest is mathematics, mostly number theory\./);
+  assert.match(html, /I’m deeply engaged with 10\+ students through the Cheenta math circles programme/);
+  assert.match(html, /plonking pins in GeoGuessr\./);
+  assert.match(html, /Site made with the help of ChatGPT 6\.1/);
+  assert.match(html, /Predicted: 98\.17%/);
+  assert.match(html, /Director, MatSoc, Delhi Public School R.K. Puram/);
+  assert.match(html, /Limits — Problem Set 2/);
+  assert.match(html, /href="\/pdfs\/limits-problem-set-2\.pdf"/);
+  assert.doesNotMatch(html, /Lean’s Math Library|2025–present/);
   assert.match(
     html,
     /src="\/adhiraj-singh-anand\.png" alt="Adhiraj Singh Anand"/,
