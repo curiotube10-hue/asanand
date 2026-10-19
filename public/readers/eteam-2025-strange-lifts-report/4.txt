@@ -1,0 +1,51 @@
+Problem 7 Strange Lifts                                                              3
+
+2  Approximating dA(N)
+
+
+  Question 2: Alice understands that deriving a formula for dA(N) can be hard in many cases.
+  Thus, in general she is interested in approximations for dA as a function of N. She says that two
+  functions f, g : N →N are approximately equal (or that f is approximately g) and writes it as
+  f ≈g if there is a constant C > 0 such that for all n ∈N,
+                               1
+                                  g(n)            + c                     C   −C ≤f(n) ≤Cg(n)
+
+  Try to calculate dA precisely or give an approximation in the following cases:
+     a) A = {1, a, b} for a, b ∈N arbitrary.
+    b) A is an arbitrary finite set.
+     c) A = {1}∪{P(n)}n∈Z≥0 where P ∈Z[x] is a polynomial with non-negative integer coefficients.
+
+(a)  For {1, a, b}
+                                                                                                    b  with C = b.Without loss of generality a < b. We claim that if A = {1, a, b}, dA(N) ≈ N
+
+                      jN k  1    jN k
+                                      b    · b −b ≤   b  ≤dA(N)
+
+
+                          ÅN ã     õN û
+                        dA(N) ≤N < b   b  + 1 ≤b   b + b
+
+
+  So,
+                               õN û
+                                 dA(N) ≈   b
+.
+
+   Note
+
+                                                        j N k
+                                                    N−b   b                                              j N k  We can also have the better approximation g(N) =   b +     a         .
+
+
+
+  Proof: Notice that
+
+                  1                      õN û
+                 bg(N) −b ≤g(N) ≤dA(N) ≤N ≤b   b + b ≤bg(N) + b
+
+as desired. □
+
+
+(b)  A is finite
+
+                 ö N ù                       with C = an                      anWe claim dA(N) ≈

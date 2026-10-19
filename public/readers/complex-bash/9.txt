@@ -1,0 +1,6 @@
+Complex Bash                                                                            8
+
+
+          to the circumcircles of triangles BME and CMF intersect at a point K, and that K lies on
+
+          the circumcircle of ABC. Prove that line AK is perpendicular to line BC.

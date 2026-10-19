@@ -1,0 +1,12 @@
+A Brief Introduction
+
+
+
+
+
+    This problem is set in an infinitely tall building, with our
+    protagonists Alice and Bob on the ground floor and the Nth floor,
+     respectively. Alice can board the lift and go up ai floors, for every
+     ai ∈A. The problem revolves around approximating the function
+    dA(N), which measures the minimum number of steps Alice must
+    take to reach Bob.

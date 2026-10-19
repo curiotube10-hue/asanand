@@ -1,0 +1,48 @@
+Generalised Bertrand’s Postulate                                                       9
+
+References
+
+
+ [1] Tchebichef, P. L., M´emoire sur les nombres premiers, Journal de Math´ematiques Pures et Appliqu´ees,
+
+    1852, 366–390.
+
+
+ [2] Erd˝os, Paul, Beweis eines Satzes von Tschebyschef, Acta Scientiarum Mathematicarum, 5(1932),
+
+    194–198.
+
+
+ [3] Garcia, Stephan Ramon, Quotients of Gaussian Primes, The American Mathematical Monthly,
+
+    120(2013), 851–853.
+
+
+ [4] Hulse, Thomas A. and Murty, M. Ram, Bertrand’s Postulate for Number Fields, Colloquium Mathe-
+
+    maticum, 147(2017), 165–180.
+
+
+ [5] Klee, Steven, Loucks, Maiya, Meek, Samantha, Overcast, Levi, Stewart, A. J. and Tou, Erik R.,
+
+    Bertrand’s Postulate over the Gaussian Integers, The Pi Mu Epsilon Journal, 14(2018), 627–638.
+
+
+ [6] Kubilius, Jonas, The Distribution of Gaussian Primes in Sectors and Contours, Leningrad. Gos. Univ.
+
+    Uc. Zap. Ser. Mat. Nauk, 137(1950), 40–52.
+
+
+ [7] Rudnick, Ze´ev and Waxman, Ezra, Angles of Gaussian Primes, Israel Journal of Mathematics,
+
+    232(2019), 159–199.
+
+
+ [8] Sittinger, Brian D., Quotients of Primes in an Algebraic Number Ring, Notes on Number Theory and
+
+     Discrete Mathematics, 24(2018), 55–62.
+
+
+ [9] Ireland, Kenneth and Rosen, Michael, A Classical Introduction to Modern Number Theory, 2nd ed.,
+
+     Springer, 1990.

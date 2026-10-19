@@ -1,0 +1,58 @@
+Problem 7 Strange Lifts                                                              7
+
+
+ We start by proving an important theorem.
+
+   Note
+   Claim: Every integer has a unique base k representation, for k ∈Z+.
+
+  Proof: Assume for the sake of contradiction there is a number that can be represented as both
+
+
+
+                                          n      m
+                     N = X aibi = X cibi
+                                               i=0        i=0
+.
+
+  For the base case, note a0 = c0 since they are just the remainder when N is divided by b.
+
+  Now, say ck = ak, ck+1 = ak+1, . . . , c0 = a0.
+
+
+
+                                       n       m
+            X  aibi = X  aibi
+                                      i=k+1       i=k+1
+.
+
+
+
+                            n−k−1         m−k−1
+          X  ak+i+1bi = X  ak+i+1bi = M
+                                   i=0               i=1
+.
+
+  So, ak+1 is just the remainder when M is divided by b.
+
+ ⇒⇐
+
+(a)   dA2 and dA3
+For A = {1, 2, 4, . . . }, we can always put 2i+1 instead of 2 · 2i. So, we can have atmost 1 of each power
+of 2.
+
+  This is just the sum of the digits of the base 2 representation of a number, which is
+
+                            ∞
+                               õN û
+                        N − X  2i
+                                                   i=1
+
+  For A = {1, 3, 9, . . . }, we can always put 3i+1 instead of 3 · 3i. So, we can have atmost 2 of each
+power of 3.
+
+  This is just the sum of the digits of the base 3 representation of a number.
+
+(b)   dAt for t ∈N
+For A = {1, t, t2, . . . }, we can always put ti+1 instead of t · ti. So, we can have atmost t −1 of each
+power of t.

@@ -1,0 +1,58 @@
+Expansions using Calculus                                                               2
+
+3  Taylor series
+
+
+Let us now try to prove a more general result.
+
+  Claim 1. The Taylor series about x = a is
+
+                                             f′′(a)               fn(a)
+                 f(a) + f′(a)(x −a) +      (x −a)2 + · · · +      (x −a)n + Rn(x)
+                                                2!                    n!
+
+
+  where
+                                       1 Z x
+                             Rn(x) =       f(n+1)(t)(x −t)n dt
+                                            n!  a
+
+
+Proof. We proceed by induction on n.
+
+  For the base case, observe that
+                                           Z x
+                                    f(x) = f(a) +     f′(t) dt
+                                                           a
+
+is just a consequence of the fundamental theorem of calculus.
+
+  Now, say our hypothesis holds for n. Observe that
+
+                                       1 Z x
+                             Rn(x) =       f(n+1)(t)(x −t)n dt
+                                            n!  a
+
+Set u = f(n+1)(t) and v = −(x−t)n+1 , so that                            n+1
+
+
+                            du = f(n+2)(t) dt,  dv = (x −t)n dt
+
+
+Then
+            x                 "                  #x           x        Z              f(n+1)(t)(x −t)n dt =  −f(n+1)(t)(x −t)n+1  +  1  Z   f(n+2)(t)(x −t)n+1 dt
+            a                         n + 1         n + 1  a
+                                                               a
+
+Therefore
+                            f(n+1)(a)               1   Z x
+                Rn(x) =         (x −a)n+1 +             f(n+2)(t)(x −t)n+1 dt
+                          (n + 1)!             (n + 1)!  a
+
+Substituting back gives
+
+                                 f(n)(a)          f(n+1)(a)              1   Z x
+f(x) = f(a)+f′(a)(x−a)+· · ·+      (x−a)n+       (x−a)n+1+            f(n+2)(t)(x−t)n+1 dt
+                                   n!            (n + 1)!            (n + 1)!  a
+
+As desired.                                                    □

@@ -1,0 +1,64 @@
+           Number-Theoretic Functional Equations
+
+
+                                Adhiraj Singh Anand
+
+                                January 19, 2026
+
+
+1  Examples
+
+
+  IMO Shortlist 2015 A2
+
+  Example 1: Determine all functions f : Z →Z with the property that
+
+                               f(x −f(y)) = f(f(x)) −f(y) −1
+
+   holds for all x, y ∈Z.
+
+
+Proof: y = f(x) =⇒f(x −f(f(x))) = −1
+
+y = x −f(f(x)) =⇒f(x + 1) = f(f(x))
+
+x = f(y) −1 =⇒f(−1) + 1 = f(f(f(x) −1)) −f(x) = f(f(x)) −f(x) = f(x + 1) −f(x)
+
+So, f = mx + c, and matching coefficients,
+
+m2 = m, 2mc = c + 1
+
+So, (m, c) = (0, −1), (1, 0)
+
+f(x) ≡−1 or f(x) = x + 1
+
+
+AoPS solution: me
+
+
+  ELMO 2025 P1
+
+  Example 2: Let Z>0 denote the set of positive integers. Find all functions f : Z>0 →Z>0 such that
+    for all positive integers m and n,
+
+                                   f m(n) + f(mn) = f(m)f(n).
+
+   Note: f m(n) = f(f(· · · f (n) · · · )), that is, f applied m times to n.
+                  | m {ztimes }
+
+
+Proof: P(1, n) =⇒f(1) = 2
+
+P(m, 1) =⇒f m(1) = f(m) . . . (1)
+
+Taking f on both sides gives f m+1(1) = f(f(m))
+
+Now, we take 2 cases.
+
+Case 1: f is injective.
+
+f m+1(1) = f(m + 1) by (1), so f(f(m)) = f(m + 1) =⇒f ≡m + 1.
+
+
+
+                                               1

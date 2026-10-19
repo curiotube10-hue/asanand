@@ -1,0 +1,14 @@
+Is dAp ever unbounded?
+
+
+
+
+
+   We claim that there are infinitely many p that satisfy this property.
+     In fact, all p : p ≥2, p ∈N satisfy this property.
+   As proved in 4a), every natural number has a unique base p
+    representation for p ∈N.
+    So, consider the number
+    pk −1 = (p −1)pk−1 + (p −1)pk−2 + · · · + (p −1).
+   dA(N) = k(p −1) →∞as k →∞. So, dAp is unbounded as
+     desired.

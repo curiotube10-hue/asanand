@@ -1,0 +1,52 @@
+Problem 7 Strange Lifts                                                              5
+
+
+  Case 2: d = a > 1.
+
+               P(n)
+  Let Q(n) =   a   . Then, there a number s′ such that every n > c′ can be represented in ≤s′ steps
+of size Q(k). So, every multiple of a can be represented in s′ moves at most.
+
+  Additionally, after going to the largest multiple of a less than n, we can reach n in at most a −1
+steps, contradicting our hypothesis.
+
+  Thus, dA(N) ≈0 for A = {1} ∪{P(n) | n ≥0}.
+
+3  dA(N) ̸≈0
+
+  Question 3: Alice wants to know for which sets A the value of dA(N) is bounded from above for
+   all N.
+     a) Does there exist a function h : N →N such that if A = {1} ∪{x1, x2, . . . } with xi ≥h(i) for
+          all i ∈N, then dA ̸≈0?
+    b) Does there exist p > 1 such that the function dA for A = {1} ∪{⌊pn⌋|n ≥1} is not
+       approximately 0?
+     c) Try to characterize all sets A for which dA(N) is bounded from above for all N.
+
+
+(a)  dA is unbounded
+
+Notice that f(n) ≈0 =⇒−C ≤f(n) ≤C
+
+   Note
+
+   Claim: h(n) = n! satisfies this property.
+
+
+                    N ù
+                              an  Proof: Clearly, dA(N) ≥ ö                                                  , where an ≤N < an+1
+                                           öan+1−1 ù                                                                         is unbounded, then dA(N) is also unbounded.                                                    an  Notice that an+1−1 lies in that range. So, if
+  öan+1−1 ù           an+1               < c + 2 = C      an                an       ≤c =⇒
+ We know a2 < C, a3 < C, . . . ,  an < C.              a1       a2           an−1
+
+
+                                                      1
+                     an           Äan ä n−1  Multiplying gives  < Cn−1, so             is bounded above.                        a1                 a1
+
+   Note
+
+
+                              1
+   Claim:  lim Ä n! ä n−1 =        n→∞  a1    ∞
+
+
+  Proof:

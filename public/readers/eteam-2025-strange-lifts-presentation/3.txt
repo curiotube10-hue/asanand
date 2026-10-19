@@ -1,0 +1,16 @@
+Greedy Algorithm
+
+
+
+
+   The greedy algorithm is defined as the process of taking the largest
+    possible step each time.  If we determine that a set uses the greedy
+    algorithm, we are done, since we have a formula for dA(N). Let
+        j N k
+    bn =   an  , and
+
+             N −Pnk=i+1 akbk
+                  bi =                                  ,        ∀i < n
+                                      ai
+    Then, dA(N) = nP bk. (Here, an is the largest ai ≤N.)
+                  k=0

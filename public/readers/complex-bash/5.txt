@@ -1,0 +1,43 @@
+Complex Bash                                                                            4
+
+
+     and
+                               a −t = a2(b + c) + 4abc + bc(b + c)
+                                   e −t       b(2a + b + c)(a + c)
+      So,
+                           a −f   e −t =          b(a + c)2                               e   × a       a2(b + c) + 4abc + bc(b + c)                    −f   −t
+     which is equal to its conjugate, so we are done. □                          □
+
+
+     1.3  Inversion
+
+      Problem 7
+
+       Let I be the incentre of acute triangle ABC with AB ̸= AC. The incircle ω of ABC is tangent
+        to sides BC, CA, and AB at D, E, and F, respectively. The line through D perpendicular to
+
+     EF meets ω at R. Line AR meets ω again at P. The circumcircles of triangle PCE and PBF
+
+       meet again at Q.
+
+       Prove that lines DI and PQ meet on the line through A perpendicular to AI.
+
+
+      Proof. Let D′ be the antipode of D on ω, and let T be a point on DI such that AT ∥EF. It suffices
+      to prove P, Q, T are collinear.
+
+      Invert with respect to the incircle. We now have the following problem, removing ∗s:
+
+     Let triangle D, E, F have midpoints A, B, C. Define P, Q, R, D′ similar to the original problem, and
+       let Q = (BFP) ∩(CEP). Prove that Q lies on the nine-point circle Ωof ADD′.
+     P, A, D′ collinear
+
+
+      Proof. Work on the complex plane. Let D = d, E = e and F = f so r = −ef .                                                                                        d
+
+     Now, we compute
+                                           r       2def + ef(e + f)                                  p =  −a =
+                                      ra −1     d(e + f) + 2ef
+      So, we obtain
+                              1    d′ −p =   (d2 + ef)(e + f) + 4def                              2 × d′       (2d + e + f)(2ef + de + df)                        −a
+     which is equal to its conjugate.                                     □

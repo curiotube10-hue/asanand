@@ -1,0 +1,58 @@
+Expansions using Calculus                                                               1
+
+1  Introduction
+
+
+We often use the expansion
+                              ∞ xn
+                                             ex = X
+                                                        n!
+                                              n=0
+
+or
+                            ∞ (−1)nx2n
+                                         cos x = X
+                                                        (2n)!
+                                            n=0
+
+However, do you know where they come from?
+
+
+2  Polynomial Approximations
+
+Let’s try to approximate ex as a polynomial. Say
+
+
+                             ∞
+                                            ex = X anxn
+                                             n=0
+
+Plugging in x = 0,
+
+                                               a0 = 1
+
+
+Now, we differentiate both sides to obtain
+
+
+                            ∞
+                                          ex = X nanxn−1
+                                            n=0
+
+Again, plugging in x = 0,
+
+                                               a1 = 1
+
+
+Repeating this process of differentiating and plugging in 0, we will get
+
+
+                                                1
+                                          an =
+                                                      n!
+
+
+Try to prove this using induction.
+
+
+  Exercise 2.1. Find the Maclaurin series of sin x and cos x using their derivatives at 0.

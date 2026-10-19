@@ -1,0 +1,41 @@
+Complex Bash                                                                            3
+
+
+    To finish, note that the inversion with respect to the incircle takes O to the nine-point center of
+   △DEF, which lies on IH.                                        □
+
+      Problem 6
+
+       Let ∆ABC be an acute angled scalene triangle with circumcircle ω. Let O and H be the
+
+       circumcenter and orthocenter of ∆ABC, respectively. Let E, F and Q be points on segments
+
+      AB, AC and ω, respectively, such that
+
+                     ∠BHE = ∠CHF = ∠AQH = 90◦.
+
+
+       Prove that OQ and AH intersect on the circumcircle of ∆AEF.
+
+
+      Proof. Let the antipode of Q be Q′, and let AH meet ω again at A′. Let T be QQ′ ∩AA′. We need
+    T to lie on (AEF).
+
+     Let (ABC) be the unit circle, with O = 0 and h = a + b + c.
+
+                                 e −a = ea −1   b     = a + b −e                                  e       eb   × a =⇒e      ab                       −b    −1
+                    h −b =    a + c   =    + c)     = b(2a + b + c)                    h      a + b + c      −b(aab + ec =⇒e       b                 −e        −e                  −c
+                      c(2a+b+c)
+      Similarly f =               .
+                       c−b
+     Now,
+                           q −a   =       bc(q −a)        = 2abc + b2c + bc2                       q              abc    + bc + ca) =⇒q    ab + 2bc + ac              −a −b −c      −q(ab
+                                       a                                                  a′ = −a −b −c =                                                  ab+bc+ca                                                −bca                                                                   bc                                 −1
+    To compute T, notice
+
+                             qq′(a + a′)     + q′)   q2(a2         + b + c)2                             t =          −aa′(q    =     −bc) =                                        qq′                 a(q2        −bc(2aa(b                              −aa′             −bc)          −c)2
+
+     Take a homothey with scale factor                                        2a+b+cb−c   to get e = b, f =    a = 2a+b+c,a(b−c)                                                          −c,                t = −bc(2a+b+c)a(b−c)   .
+
+                                      a −f =   a + c
+                                           e −f   2a + b + c

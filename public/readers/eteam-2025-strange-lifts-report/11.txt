@@ -1,0 +1,48 @@
+Problem 7 Strange Lifts                                                             10
+
+  Now, say f3 + · · · + f2k−1 = f2k −1
+  f3 + · · · + f2k−1 + f2k+1 = f2k + f2k+1 −1 = f2k+2 −1.
+  Claim 2: f2 + f4 + · · · + f2n = f2n+1 −1
+  Proof: f2 = 1 = f3 −1.
+  Now, say f2 + f4 + · · · + f2k = f2k+1 −1
+  f2 + f4 + · · · + f2k + f2k+2 = f2k+1 + f2k+2 −1 = f2k+3 −1.
+
+  Claim 3: Every number can be represented as a sum of non-consecutive Fibonacci numbers using
+the greedy algorithm.
+
+  Proof: We proceed by induction. Clearly, 1 = f1 can be represented using the greedy algorithm.
+Now, say 1, 2, . . . , k can be represented.
+
+   If k + 1 = fn, then there is nothing to prove.
+
+  Otherwise, ∃n such that fn < k + 1 < fn+1. Then, k + 1 = fn + (k + 1 −fn), and k + 1 −fn <
+fn+1 −fn = fn−1.
+  So, since k + 1 −fn has a unique representation using the greedy algorithm without involving fn,
+we are done.
+
+  Claim 4: This representation is unique.
+
+  Say P fx = P fy
+     x∈X      y∈Y
+
+  Let X −Y = A, Y −X = B. Then,
+             X fx = X fy
+                                     x∈A     y∈B
+
+
+  However, say max A = v and max B = u. Then, if WLOG v > u we get a contradiction by Claim 1
+and Claim 2 since we can’t reach fv with the sum of non consecutive Fibonacci numbers less that fv.
+
+  Combining our claims, we get that every integer has a unique representation as the sum of non
+consecutive Fibonacci numbers using the greedy algorithm as desired. □
+
+  Definition 1 ): h0 = 0, h1 = 1 and hi = khi−1 + hi−2
+
+  Now, let us consider the set {1, h2, h3, . . . , hn}. Notice that if we have khn and hn−1, we can replace
+it with hn+1. So, if the coefficient of hi is ever k, the coefficient of hi−1 is 0.
+
+  Additionally, we can have at most (k −1)h1 since kh1 = h2.
+
+  V.E Hogatt Junior wrote a paper describing such sequences. According to his work, every integer
+can be represented uniquely in this manner. In an analogous fashion to the proof in the Fibonacci
+sequence question, we get that this too uses the greedy algorithm, so we are done.

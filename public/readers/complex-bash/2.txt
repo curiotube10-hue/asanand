@@ -1,0 +1,50 @@
+Complex Bash                                                                            1
+
+
+  RC, FC similarly. Prove that TAFA, TBFB, TCFC are concurrent.
+
+                                                                                                .                                                              aProof. Let (ABC) be the unit circle. TA = 12 a + b + c −bc
+                           a2(b+c)
+                                               .                         a2+bc  RA = BC ∩AA′ =
+        a+RA    1  a(a2+bc)+a2(b+c)
+   FA =   2  = 2        a2+bc          .
+
+   Since
+                                 n9 −FA = a(b + c) = a(b + c)
+                                 n9 −Ta    a2 + bc    a2 + bc
+TA, FA, N9 are collinear. By symmetry, TAFA, TBFB, TCFC concur at N9.                □
+
+
+1.2  Homothety
+
+      Problem 3
+
+        In triangle ABC with CA = CB, point E lies on the circumcircle of ABC such that ∠ECB = 90◦.
+
+      The line through E parallel to CB intersects CA in F and AB in G. Prove that the centre of
+
+        the circumcircle of triangle EGB lies on the circumcircle of triangle ECF.
+
+
+      Proof. Let O and P be the circumcentres of △ABC and △EGB respectively, and let EF intersect
+    (ABC) again at T.
+
+      Clearly, E and T are the antipodes of B and C respectively.
+
+     Notice that ∡FEO = ∡TEB = ∡TCB = ∡ACT = ∡FCO, so C, E, F, O are concyclic.
+
+                                                                                             c2      Let’s employ complex numbers with respect to (ABC), with a =    , e =      t =                                                                                               b                                                                      −b,    −c.
+                                            b2+bc+2c2    The intersection formula gives g =               . Shifting by b and taking a homothety with scale factor
+                                             b−c
+       1                     b2+c2        gives b′ = b, g′ =         , e′ = 0.       2                           b−c
+                                                                                  b(b+c)
+     Now, using the circumcircle formula and shifting back gives p =          . It suffices to prove C, E, O, P
+                                                                        b−c
+                    =                                                   b + c                                             c                                                   c                                                         b                        ∈R Which is evidently true.                □      are concyclic ⇐⇒   e−pc−p × e
+
+      Problem 4
+
+       Let ABC be an acute triangle with incentre I and AB ̸= AC. Let lines BI and CI intersect
+        the circumcircle of ABC at P ̸= B and Q ̸= C, respectively. Consider points R and S such that
+     AQRB and ACSP are parallelograms (with AQ ∥RB, AB ∥QR, AC ∥SP, and AP ∥CS).
+       Let T be the point of intersection of lines RB and SC. Prove that points R, S, T, and I are

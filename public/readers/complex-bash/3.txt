@@ -1,0 +1,48 @@
+Complex Bash                                                                            2
+
+
+        concyclic.
+
+      Proof. Notice that ∡RTS = ∡QAP, so it suffices to prove ∡RIS = ∡QAP.
+    Now, work on the complex plane with a = x2, b = y2, c = z2.  So, p = −xz, q = −xy, j =
+    −xy −yz −zx, r = y2 −xy −x2, s = z2 −xz −x2.
+
+                                            r −j    a −p                                           s       a   ∈R                             −j    −q
+                  ⇐⇒(x(x ++ y)(yz)(y −x ++ z)z) × xx ++ yz = 1 ∈R                            −x
+     which is trivially true.                                          □
+
+
+      Problem 5
+
+       In triangle ABC, consider points A1, A2 on line BC such that A1, B, C, A2 are in that order
+
+      and A1B = AC and CA2 = AB. Similarly consider points B1, B2 on line AC, and C1, C2 on
+
+         line AB. Prove that the orthocentres of triangles A1B1C1 and A2B2C2 are equidistant from
+
+        the circumcentre of ABC.
+
+
+      Proof. Let DEF be the intouch triangle of △ABC with centre I, and let H1, H2, H be the ortho-
+      centres of △A1B1C1, △A2B2C2, △DEF respectively. Let O be the circumcentre of ABC.
+
+     Notice that A1, A2, B1, B2, C1, C2 are concyclic with centre I, since DI = EI = FI and DA1 =
+    DA2 = EB1 = EB2 = FC1 = FC2 = s, where s is the semiperimeter of △ABC
+
+   H is the midpoint of H1H2
+
+
+      Proof. Let A1A2B1B2C1C2 be the unit circle with A1 = a, B1 = b, C1 = c, A2 = ωa, B2 = ωb,
+
+     C2 = ωc since A1A2 = B1B2 = C1C2.
+
+                                                                             a(1+ω)
+    D, E, F are the midpoints of A1A2, B1B2, C1C2 respectively, so d =    2   and so on.
+
+                                                  2                               (1+ω)(a+b+c)     Taking a homothety with scale factor    and scaling back gives h =                    , which is precisely                                      1+ω                                     2
+     the midpoint of H1H2.                                          □
+
+
+
+                                               (1+ω)(a+b+c)
+      Additionally, HI ⊥H1H2 since (1−ω)(a+b+c)2   = 2(1−ω)1+ω   is purely imaginary.

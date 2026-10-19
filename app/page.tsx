@@ -1,4 +1,5 @@
 import CvDisclosure from "./cv-disclosure";
+import DocumentReader from "./document-reader";
 
 export const dynamic = "force-static";
 
@@ -158,7 +159,7 @@ const mathematicalCommunity = [
   {
     title: "Director, MatSoc, Delhi Public School R.K. Puram",
     bullets: [
-      "Participated in weekly problem-solving sessions; prepared notes and problem sets on complex-coordinate geometry, inequalities and functional equations.",
+      "Prepared notes and problem sets on complex-coordinate geometry, inequalities and functional equations for two-hour morning Olympiad sessions at school.",
     ],
   },
   {
@@ -196,6 +197,7 @@ const handoutGroups = [
   {
     id: "olympiad-handouts",
     label: "Olympiad",
+    description: "Handouts for Math Circles at Cheenta and two-hour morning Olympiad sessions at Delhi Public School, R.K. Puram.",
     items: [
       {
         title: "Basic Inequalities in Olympiad Problems",
@@ -351,6 +353,9 @@ export default function Home() {
                     . {writing.description}{" "}
                     <span className="item-meta">({writing.meta})</span>
                   </p>
+                  {"href" in writing ? (
+                    <DocumentReader href={writing.href} title={writing.title} />
+                  ) : null}
                   {"resources" in writing ? (
                     <ul className="resource-links">
                       {writing.resources.map((resource) => (
@@ -363,6 +368,9 @@ export default function Home() {
                             </span>
                           ) : null}{" "}
                           <span className="file-label">{resource.type}</span>
+                          {resource.type === "PDF" ? (
+                            <DocumentReader href={resource.href} title={resource.label} />
+                          ) : null}
                         </li>
                       ))}
                     </ul>
@@ -527,6 +535,7 @@ export default function Home() {
                         </a>
                         <span className="handout-meta">{item.meta}</span>
                       </p>
+                      <DocumentReader href={item.href} title={item.title} />
                     </li>
                   ))}
                 </ol>

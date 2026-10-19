@@ -1,0 +1,57 @@
+Generalised Bertrand’s Postulate                                                       3
+
+
+    Indeed,
+                          Π(bx; I) −Π(ax; I) ∼g|I|    bx  −  ax
+                                       2πh   log(bx)   log(ax)
+                                     ∼g|I|  −a) x −→∞.                                          2πh(b     log x
+
+Consequently, this difference is positive for all sufficiently large x.
+
+
+3  Main Result
+
+
+We begin with the geometric lemmas needed to construct a fixed annular sector inside the region.
+
+   Let
+                                                            a1          a2
+                  α = a1 + a2τ,   R = |α|,    u =     ,    v =     .
+                                    R      R
+
+Then
+
+                                               |u + vτ| = 1.
+
+
+Since α is η-thick,
+
+                                                |u| ≥η,      |v||τ| ≥η.
+
+
+
+  Lemma 3.1. For every η-thick α, the scaled region
+
+
+                                          1
+                                   Wu,v = |α|Bτ(α, (1 + c)α)
+
+
+  contains the ball B(Mu,v, δ), where
+
+
+                                                      c
+                                   Mu,v =  1 +    (u + vτ)
+                                               2
+
+
+  and
+                                                    c cη sin φ
+                                        δ = min  4,   4         .
+
+
+
+Proof. Define
+                                       
+                      min{u, (1 + c)u} < X < max{u, (1 + c)u},                                                            Pu,v = X + Y τ                                                                          ,
+                      min{v, (1 + c)v} < Y < max{v, (1 + c)v}                                        

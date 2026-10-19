@@ -1,0 +1,13 @@
+A is finite
+
+
+
+
+
+    Notice that
+
+           1  N      N              N
+         ×   −an <   ≤dA(N) ≤N < an ×  + an
+            an   an         an                      an
+
+    so dA(N) ≈Nan

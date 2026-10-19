@@ -1,0 +1,53 @@
+So, the only solution is (a, b, c) = (3, 2, 1).
+
+
+AoPS solution: me
+
+
+  USAMO 2022 P4 / USAJMO 2022 P5
+
+  Example 3: Find all pairs of primes (p, q) for which p −q and pq −q are both perfect squares.
+
+Proof: Let pq −q = a2, p −q = b2.
+
+Subtracting gives p(q −1) = (a + b)(a −b). Since a −b < a < p and a + b < 2a < 2p, we get a + b = p and
+a −b = q −1.
+Finally, p > q, so q = 2 =⇒a = p+q−12  = p+12 =⇒8p −8 = p2 + 2p + 1, so p = 3.
+So, the only pair (p, q) = (3, 2).
+
+
+AoPS solution: me
+
+
+   Romanian Master of Mathematics 2023 P1
+
+  Example 4: Determine all prime numbers p and all positive integers x and y satisfying
+
+                                       x3 + y3 = p(xy + p).
+
+
+Proof: Assume for the sake of contradiction x + y = kp.
+
+If k = 1, (x −y)2 = p, which is not possible.
+If k ≥2, x+yk + xy = p + xy ≥k(x2 −xy + y2) ≥2xy, so x+yk  ≥xy, ⇒⇐.
+Let x + y = m and xy = n, so gcd(p, m) = 1 and m(m2 −3n) = p(n + p).
+
+⇐⇒m3 −p2 = n(3m + p)
+
+⇐⇒m3 −p2 ≡0 (mod 3m + p).
+
+Now, notice m3 −p2 ≡m3 −p2 + 3mp + p2 ≡m(m2 + 3p) (mod 3m + p).
+
+So, 3m + p | m2 + 3p ⇐⇒3m + p | 3m2 + 9p −3m2 −pm ⇐⇒3m + p | 9 −m.
+
+Clearly, m = 9. From here, checking just 4 cases gives the solutions (p, x, y) = (8, 1, 19), (7, 2, 13), (5, 4, 7) and
+permutations.
+
+
+AoPS solution: me
+
+
+
+
+
+                                               2

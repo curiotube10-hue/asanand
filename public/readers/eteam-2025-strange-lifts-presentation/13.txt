@@ -1,0 +1,13 @@
+What if the building has basements?
+
+
+
+
+    Here, we tried to explore what would happen to dA if we are also
+    allowed to go down ai floors ∀ai ∈A.
+     In this research direction, we deduced
+    ▶For dAt, t ∈N, we have that dAt is the sum of the digits of a
+       number is balanced base t.(This is the unique representation
+         of a number using digits from −t  to   t                                              2       2
+    ▶For a finite set, dA(N) ≈Nan
+    ▶If ai ≥h(i), then dA is still unbounded.

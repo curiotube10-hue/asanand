@@ -1,0 +1,13 @@
+dAt ̸≈dAt′
+
+
+
+
+
+    Let N = pn
+    Thus, dAq(pn) ≤2C ∀n
+   By the Senge-Strauss Theorem, the number of integers the sum of
+    whose digits in each of the bases p and q lies below a fixed bound
+      is finite if and only if p and q are multiplicatively independent.
+    So, dAq(pn) + dAp(pn) = dAq(pn) + 1 ≤2C + 1 for finitely many n.
+    However, there are infinite choices for n, contradiction.

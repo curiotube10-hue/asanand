@@ -1,0 +1,10 @@
+Unexplored research directions
+
+
+
+
+
+    ▶Given a function f (n), when can you find a set A such that
+       dA ≈f .
+    ▶Given a set A, consider all subsets B such that 1 ∈B. Find or
+        approximate the average of dB(N) over all such subsets B.

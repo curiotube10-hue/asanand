@@ -1,0 +1,15 @@
+Conventions
+
+
+
+   We say f ≈g  if ∃C ∈R such that
+
+                 1
+                 g(N) −C ≤f (N) ≤Cg(N) + C
+             C
+  ∀N ∈N
+    Notice that g ≡0 =⇒−C ≤dA(N) ≤C, so any function
+    approximately equal to 0 is bounded above, and vice versa.
+     Additionally, At = {⌊tn⌋| n ≥0}
+     Finally, let A = {1, a2, a3, . . . , an} or A = {1, a2, a3, . . . } with
+    1 < a2 < a3 < . . . .

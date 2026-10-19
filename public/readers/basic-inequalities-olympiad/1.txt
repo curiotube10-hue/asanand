@@ -1,0 +1,56 @@
+             Basic Inequalities in Olympiad Problems
+
+                                  Adhiraj Anand
+
+                                 June 21, 2025
+
+
+
+   Here are a few conventions and notations used throughout the passage.
+
+      • P f(a1, a2, . . . , an) refers to cycling through all n summands
+           cyc
+
+                            f(a1, a2, . . . , an), f(a2, a3 . . . , a1), . . . , f(an, a1, . . . , an−1)
+
+      • P f(a1, a2, . . . , an) cycles through all n! permutations in a similar manner.
+         sym
+
+      • Unless specified otherwise, all inequalities will be for positive reals.
+
+
+
+   This document will attempt to demonstrate how we can tackle most Olympiad problems with a handful
+of inequalities (Of course, one can think of techniques like SOS and Chinese Dumbass Notation as extensions
+of AM-GM, but I won’t do so here).  First, let’s consider the backbone of olympiad inequalities, the AM-
+GM-HM inequality.
+
+1 AM-GM-HM
+
+
+  Theorem 1:
+
+                        a1 + a2 + · · · + an                    n                         ≥ n√a1a2 . . . an ≥  1     1           1                         n                 +  + · · · +                                                                        a1    a2         an
+
+
+   Note
+   In general the function
+
+                                                                           x                                          ax1 + ax2 + · · · + axn   1                                  f(x) =
+                                         n
+
+     is non-decreasing
+
+
+1.1  Practice Problems
+   1 Find the minimum of 23x2−2x+1 + 22x−3x2+3.
+
+   2 Prove that (a + b)(b + c)(c + a) ≥8abc.
+
+   3 Prove that a4 + b4 + c4 ≥abc(a + b + c).
+
+
+
+
+
+                                              1

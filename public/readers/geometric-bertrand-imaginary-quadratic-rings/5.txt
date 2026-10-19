@@ -1,0 +1,49 @@
+Generalised Bertrand’s Postulate                                                       4
+
+
+and
+                                  A1,1+c = {z ∈C | 1 < |z| < 1 + c}.
+
+Scaling the coordinate inequalities and norm bounds in the definition of Bτ(α, (1 + c)α) by R gives
+
+
+                                     Wu,v = Pu,v ∩A1,1+c.
+
+
+
+                                                     τ
+
+
+
+
+
+                           (1 + c)vτ
+
+                                                       Mu,v
+
+                           vτ
+
+
+
+
+
+                                                                           1
+                                  u                                                   (1 + c)u
+
+
+
+                                     Figure 1: Annular region
+
+
+  We defined
+                                                     c
+                                  Mu,v =  1 +    (u + vτ).
+                                              2
+
+Because |u + vτ| = 1,
+                                                           c
+                                            |Mu,v| = 1 + 2.
+
+Hence
+                                                              c
+                                       d(Mu,v, ∂A1,1+c) = 2.

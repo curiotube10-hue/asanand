@@ -1,0 +1,52 @@
+Complex Bash                                                                            7
+
+
+       5 Let O be the circumcenter of an acute triangle ABC. Line OA intersects the altitudes of
+
+      ABC through B and C at P and Q, respectively. The altitudes meet at H. Prove that the
+
+          circumcenter of triangle PQH lies on a median of triangle ABC.
+
+
+     2.2  Hard
+
+       1 Let ABC be an acute, scalene triangle with orthocentre H. Let ℓa be the line through the
+
+            reflection of B with respect to CH and the reflection of C with respect to BH. Lines ℓb and ℓc
+           are defined similarly. Suppose lines ℓa, ℓb, and ℓc determine a triangle T .
+         Prove that the orthocentre of T , the circumcentre of T , and H are collinear.
+       2 Let D be an interior point of the acute triangle ABC with AB > AC so that ∠DAB = ∠CAD.
+        The point E on the segment AC satisfies ∠ADE = ∠BCD, the point F on the segment AB
+            satisfies ∠FDA = ∠DBC, and the point X on the line AC satisfies CX = BX. Let O1 and
+
+        O2 be the circumcenters of the triangles ADC and EXD, respectively. Prove that the lines
+
+        BC, EF, and O1O2 are concurrent.
+
+       3 Let ABC be an acute-angled triangle with AB < AC. Let Ωbe the circumcircle of ABC. Let
+
+        S be the midpoint of the arc CB of Ωcontaining A. The perpendicular from A to BC meets
+       BS at D and meets Ωagain at E ̸= A. The line through D parallel to BC meets line BE at L.
+         Denote the circumcircle of triangle BDL by ω. Let ω meet Ωagain at P ̸= B. Prove that the
+            line tangent to ω at P meets line BS on the internal angle bisector of ∠BAC.
+
+       4 Let I be the incenter of acute triangle ABC with AB ̸= AC. The incircle ω of ABC is tangent
+          to sides BC, CA, and AB at D, E, and F, respectively. The line through D perpendicular to
+
+       EF meets ω at R. Line AR meets ω again at P. The circumcircles of triangle PCE and PBF
+
+         meet again at Q.
+
+         Prove that lines DI and PQ meet on the line through A perpendicular to AI.
+
+       5 Let ABC be an acute triangle with circumcircle Γ. Let ℓbe a tangent line to Γ, and let ℓa, ℓb
+
+         and ℓc be the lines obtained by reflecting ℓin the lines BC, CA and AB, respectively. Show
+
+          that the circumcircle of the triangle determined by the lines ℓa, ℓb and ℓc is tangent to the circle
+
+          Γ.
+
+       6 Let ABC be an acute triangle. Let M be the midpoint of side BC, and let E and F be the
+
+            feet of the altitudes from B and C, respectively. Suppose that the common external tangents

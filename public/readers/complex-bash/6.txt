@@ -1,0 +1,44 @@
+Complex Bash                                                                            5
+
+      Additionally, Q ∈BC since
+
+                     ∡PQB = ∡PFD = ∡PEC = ∡PQC
+
+
+    To finish, notice that the midpoint M of AD and BC lies on Ω, and
+
+                  ∡MIP = ∡D′PI = ∡ID′P = ∡DEP = ∡MQP
+
+                                                          □
+
+
+      Problem 8
+
+       Let ABC be an acute-angled triangle with circumcircle ω and circumcentre O. Points D ̸= B
+      and E ̸= C lie on ω such that BD ⊥AC and CE ⊥AB. Let CO meet AB at X, and BO
+       meet AC at Y .
+
+       Prove that the circumcircles of triangles BXD and CY E have an intersection lie on line AO.
+
+
+      Proof. We claim the intersection is P = AO ∩(BOC). For this, we use complex numbers with unit
+       circle (ABC).
+
+     Notice that inversion at O sends P to AO ∩BC, which is just
+                                      bc(a −a) + a2(b + c) = a2(b + c)
+                                              bc + a2           a2 + bc
+
+
+     by the intersection formula.
+
+      Inverting back gives us
+                                         !−1                                              a2(b + c)       a2 + bc
+                                   p =         =
+                                             a2 + bc          b + c
+
+      Additionally,
+
+                                                                 b                              −1                                                           d     =                                         b −d = 11                                  a       =⇒d  −acb                                                    a    c                          −c   −1
+     and
+                                       ab(c         + b)   c2(a + b)                          x =    −c) −(−c2)(a   =
+                                          ab −(−c2)          ab + c2

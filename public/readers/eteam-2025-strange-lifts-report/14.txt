@@ -1,0 +1,13 @@
+Problem 7 Strange Lifts                                                             13
+
+
+References
+
+[1]  Allison Paul. “What is ... Waring’s Problem”. In: (2015). url: https://math.osu.edu/sites/
+    math.osu.edu/files/paul_silwal_waring_fullNotes_2015.pdf.
+[2]  Attila Peth˝o and Robert Tichy (graz. “S-unit equations, linear recurrences and digit expansions”.
+     In: Publ. Math. Debrecen 42 (1993), pp. 145–154. url: https://publi.math.unideb.hu/load_
+    doc.php?p=70&t=pap.
+[3]  Wikipedia contributors. Additive basis — Wikipedia, The Free Encyclopedia. [Online; accessed
+     2-July-2025]. 2023. url: https://en.wikipedia.org/w/index.php?title=Additive_basis&
+    oldid=1186467722.

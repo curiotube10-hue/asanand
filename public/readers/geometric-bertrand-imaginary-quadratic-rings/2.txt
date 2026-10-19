@@ -1,0 +1,55 @@
+Generalised Bertrand’s Postulate                                                       1
+
+
+   Bertrand-type questions have also been studied for number fields more generally. Hulse and Murty
+
+proved results about the existence of prime ideals whose norms lie in intervals of the form
+
+
+                                 x ≤N(p) ≤BKx
+
+
+for suitable constants BK > 1 depending on the field K ([Hulse]). Their result is a number-field analogue
+
+of Bertrand’s postulate, but it is formulated in terms of norm intervals.
+
+   The analytic input used in this paper comes from angular distribution results for primes in imaginary
+
+quadratic rings. Classical work of Kubilius studied the distribution of Gaussian primes in sectors ([Kubi]).
+
+More directly, Sittinger states an angular prime-counting theorem for imaginary quadratic rings and
+
+derives the consequence that sufficiently large annular sectors contain prime elements ([Sitt]). This is the
+
+result used in the proof of the main theorem.
+
+
+2  Preliminaries
+
+
+Let K be an imaginary quadratic number field, and let OK be its ring of integers. Choose an integral basis
+
+
+                           OK = Z + Zτ,
+
+
+where τ ∈C \ R and Im(τ) > 0. Thus, every element of OK can be written uniquely as
+
+
+                                      a1 + a2τ,     a1, a2 ∈Z.
+
+
+Geometrically, OK forms a lattice in the complex plane.
+   Throughout this paper, for every complex number z ∈C, define N(z) = |z|2.
+
+  A nonzero nonunit π ∈OK is a prime element if the principal ideal (π) is a nonzero prime ideal.
+
+  Definition 2.1. γ = c1 + c2τ lies between α = a1 + a2τ and β = b1 + b2τ, a1, a2, b1, b2 ∈R if and only
+
+    if
+
+
+      1. min{N(α), N(β)} < N(γ) < max{N(α), N(β)};
+
+
+      2. min{a1, b1} < c1 < max{a1, b1};

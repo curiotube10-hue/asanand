@@ -1,0 +1,56 @@
+                  P(f n(x), f n−1(x)) =⇒f n+1(x) −f n−1(x) ≥f n+2(x) −f n(x)
+
+So,
+           x −f(f(x)) ≥f(x) −f(f(f(x))) ≥· · · ≥fn+1(x) −f n−1(x) ≥f n+2(x) −f n(x)
+
+     =⇒x −f(f(x)) + f(f(x)) −f(f(f(f(x)))) + · · · + f2k−2(x) −f 2k(x) = x −f 2k(x) ≥kz
+
+x > x −f 2k(x) ≥kz. However, since z > 0, this is a contradiction for large enough k.
+
+So, f(f(x)) = x =⇒xf(x) ≥yf(y)
+Switching x and y yields xf(x) = yf(y), so xf(x) = c and f(x) = x,c  which works ∀c > 0.
+
+AoPS solution: me
+
+
+2  Practise Problems
+
+
+Here are some practise problems, in increasing order of difficulty.
+
+   1. IMO Shortlist 2013 A3
+     Let f : Q>0 →R satisfy
+
+                              f(x)f(y) ≥f(xy),    f(x + y) ≥f(x) + f(y)
+
+      for all positive rational x, y. If f(a) = a for some rational a > 1, prove that f(x) = x for all positive
+      rational x.
+
+
+   2. IMO Shortlist 2022 A3
+     Find all functions f : R>0 →R>0 such that, for each x > 0, there is exactly one y > 0 satisfying
+
+                                          xf(y) + yf(x) ≤2.
+
+
+   3. IMO Shortlist 2011 A6
+     Let f : R →R satisfy
+                                    f(x + y) ≤yf(x) + f(f(x))
+
+      for all real x, y. Prove that f(x) = 0 for every x ≤0.
+
+
+   4. IMO Shortlist 2017 A8
+    Assume that f : R →R has the following property: whenever x, y ∈R satisfy
+
+                                         (f(x) + y)(f(y) + x) > 0,
+
+     one has f(x) + y = f(y) + x. Prove that
+
+                                 f(x) + y ≤f(y) + x    whenever x > y.
+
+
+
+
+
+                                               2

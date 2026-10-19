@@ -1,0 +1,50 @@
+Problem 7 Strange Lifts                                                              2
+
+
+
+  Problem Statement: Imagine a building with infinitely many storeys. The storeys in this building
+  are numbered by the non-negative integers in increasing order. Alice is standing on the zero-th
+  storey of the building and she wants to meet with Bob, who lives on the N −th storey for some
+ N ∈N. Alice wants to use the building’s lift, however there is one rule for using it. There is a
+  set of numbers A ⊂N with the only condition that 1 ∈A. Alice is allowed to go on the lift only
+  from the k −th storey to the (k + a) −th storey for any a ∈A.
+
+First, let us rephrase dA(N) in the following way. Given A = {a1, a2, . . . an}, 1 = a1 < a2 < · · · < an,
+N ∈Z+ such that                         n
+             X aixi = N
+                                              i=1
+dA(N) is the minimum possible value of x1 + · · · + xn
+
+
+  Definition 1 ): Throughout this document we will be using the term “greedy algorithm”, which
+  refers to a technique where you take the largest possible ai at each step.  If we determine that a
+                                                                                  ö N ù  set uses the greedy algorithm, we are done, since we have a formula for dA(N). Let bn =  an  ,
+  and
+                                                 k=i+1 akbk ü                        úN −Pn                                                bi =
+                                                         ai
+  Then, dA(N) = nP bk. (Here, an is the largest ai                 k=0                    ≤N.)
+
+
+1  Bounds on dA(N)
+
+
+  Question 1: Alice wants to estimate how long she will travel from storey to storey to get to Bob’s
+  apartment. She denotes the number of lift uses required to get to Bob’s apartment as dA(N).
+     a) Can Alice always reach Bob’s apartment? When it is possible to reach Bob’s apartment,
+        give a bound on dA(N) independent of A.
+    b) Decide whether dA(M + N) is always less than or equal to dA(M) + dA(N).
+
+
+(a)  Upper bound independent of A
+
+Since 1 ∈A, Alice can reach Bob by going up N steps one at a time. Clearly, dA(N) ≤N since we
+can always go N steps up one at a time. This bound is achieved when a2 > N.
+
+
+(b)  Sub-additivity
+
+Assume for the sake of contradiction dA(M + N) > dA(M) + dA(N). We can always go M floors
+up in dA(M) steps and N floors up in dA(N) steps. In this manner, we can go M + N floors up in
+dA(M) + dA(N) steps. This contradicts the minimality of dA(M + N).
+
+  Thus, dA(M + N) ≤dA(M) + dA(N)

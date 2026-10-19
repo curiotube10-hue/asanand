@@ -1,0 +1,52 @@
+Problem 7 Strange Lifts                                                              4
+
+
+
+                           õ N û  1       õ N û
+                               an   · an −an ≤  an  ≤dA(N)
+
+
+                                          õ N û
+                            dA(N) ≤N ≤an  an + an
+
+
+  So,
+                                         õ N û
+                                 dA(N) ≈  an
+
+
+   Note
+
+                                                  ö N ù  We can also have the better approximation. Let bn =  an  , and
+
+                                                 k=i+1 akbk ü                        úN −Pn                                                bi =
+                                                         ai
+
+   Then, dA(N)   nP bk = g(N).          ≈ k=1
+
+
+  Proof: Notice that
+
+                  1                       õN û
+                  g(N)                     + b     + b                 an    −an ≤g(N) ≤dA(N) ≤N ≤b   b     ≤bg(N)
+
+as desired. □
+
+(c)  A = {1} ∪{P(n) | n ≥0}
+We claim that dA(N) ≈0, or in other words, dA(N) is bounded above.
+  Assume for the sake of contradiction there exists P such that dA(N) for A = {1} ∪{P(n) | n ≥0}
+is unbounded.
+
+  Eric Kamke proved in 1921[1] that if P(n) is a polynomial with no fixed divisor d > 1, then ∃s such
+that
+                             P(x1) + P(x2) + · · · + P(xt) = n
+has a solution for large enough n and t < s.
+
+  Say n is large enough is n ≥c for some constant c. For n < c, we have dA(n) ≤c −1 so dA(n) is
+bounded above.
+
+  Now, assume n ≥c.
+
+  Case 1: d = 1
+
+  Then, by the above theorem n can be represented in at most s steps, which is a contradiction.

@@ -1,0 +1,48 @@
+Generalised Bertrand’s Postulate                                                       8
+
+
+Thus, we obtain
+
+                                               Ij ⊂{θ | dT(θ, θ0) < ε}.
+
+                                                          □
+
+   Furthermore, this construction ensures that every Ij is an ordinary interval in R/2πZ, allowing Theorem
+
+2.1 to apply directly.
+
+  Theorem 3.1. For every c > 0 and every η > 0, there exists N0(K, τ, η, c) such that, if α ∈OK is
+
+  η-thick and
+
+                               N(α) ≥N0(K, τ, η, c),
+
+  then Bτ(α, (1 + c)α) contains a prime element of OK.
+
+
+Proof. Let θ0 = arg(α). By Lemma 3.3, choose j such that
+
+
+                                               Ij ⊂{θ : dT(θ, θ0) < ε}.
+
+
+Apply the annular-sector result with a = r21, b = r22, and x = N(α) = R2.  It gives a prime element ρ
+
+satisfying
+
+                             r1R < |ρ| < r2R,     arg ρ ∈Ij.
+
+Consequently ρ/R belongs to the sector in Lemma 3.2, which is contained in Wu,v. Hence ρ ∈Bτ(α, (1+c)α),
+and because ρ ∈OK, it belongs to Bτ(α, (1 + c)α), completing the proof.                 □
+
+
+4  Further Directions
+
+
+The thickness hypothesis ensures that the region contains an annular sector of uniform width. It would be
+
+useful to determine whether this hypothesis can be weakened.
+
+   Another problem is to obtain explicit bounds for N0(K, τ, η, c), possibly under the generalized Riemann
+
+hypothesis.

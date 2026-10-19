@@ -1,0 +1,14 @@
+Generalization of Fibonacci numbers
+
+
+
+
+
+   Now, let us consider the set {1, h2, h3, . . . }. Here, h1 = 1, h2 = k
+    and hn+1 = khn + hn−1
+    Notice that if we have khn and hn−1, we can replace it with hn+1.
+    So, if the coefficient of hi is ever k, the coefficient of hi−1 is 0.
+     Additionally, we can have at most (k −1)h1 since kh1 = h2.
+    V.E Hogatt Junior wrote a paper describing such sequences.
+    According to his work, every integer can be represented uniquely in
+     this manner.

@@ -1,0 +1,17 @@
+A = {1} ∪{P(n)}n∈Z≥0
+
+
+
+
+    Kamke’s theorem states that if f  is an integer valued polynomial
+    with no fixed divisor ≥2 and for large enough s, the equation
+
+                              f (x1) + f (x2) + · · · + f (xs) = N
+
+    has a solution for large enough N and in positive integers
+     x1, x2, . . . , xs.
+                                                         P(n)
+   Now, let the largest fixed divisor of P be d. Let   = Q(n).                                                         d
+   P(x1)+P(x2)+· · ·+P(xs) = d(Q(x1)+Q(x2)+· · ·+Q(xs)) = dN
+    has a solution for large enough N by Kamke’s theorem, and now
+    the remainder of the steps can be covered in ≤d −1 moves.

@@ -1,0 +1,69 @@
+Say f(i, i) = f(j, j). Then, i = f(f(i, i), 2025) = f(f(j, j), 2025) = j.
+
+So, ∃i such that f(i, i) = 2024. Then, f(2024, 2025) = 2024 but f(f(2024, 2024), f(2024, 2025)) = 2024 =⇒
+f(2024, 2025) = 2025, ⇒⇐.
+
+
+AoPS solution: me
+
+
+  INMO 2026 P4
+
+  Example 5: Two integers a and b are called companions if every prime number p either divides both
+   or none of a, b. Determine all functions f : N0 →N0 such that f(0) = 0 and the numbers f(m) + n
+   and f(n) + m are companions for all m, n ∈N0.
+   (Here N0 denotes the set of all non-negative integers.)
+
+
+Proof: Solution from the contest:
+
+Denote the assertion by P(m, n).
+
+P(m, 0) =⇒rad(m) = rad(f(m)). Denote this assertion by Q(m).
+
+Claim 1:f(1) = 1.
+Proof: Q(1) =⇒rad(f(1)) = rad(1), so f(1) = 1. □
+
+Claim 2:f(pk) = pk.
+Proof: Q(pk) gives f(pk) = pℓ, and P(pk, 1) gives rad(pk + 1) = rad(pℓ+ 1), so k = ℓby Zsig. □.
+
+Claim 3:f ≡m
+
+Proof: Notice that gcd(pk + m, pk + f(m)) = gcd(pk + m, f(m) −m) ≥rad(pk + m).
+Since rad(pk + m) is unbounded, plugging in large enough p, k gives f(m) = m as desired. □
+
+
+AoPS solution: me
+
+
+  IMO 2025 P3
+
+  Example 6: Let N denote the set of positive integers. A function f : N →N is said to be bonza if
+
+                                      f(a) divides ba −f(b)f(a)
+
+    for all positive integers a and b.
+   Determine the smallest real constant c such that f(n) ⩽cn for all bonza functions f and all positive
+   integers n.
+
+Proof: Notice that P(a, a) =⇒f(a) | aa. Also, f ≡a works, so from now assume f isn’t the identity. So,
+∃y such that f(y) ̸= y.
+
+Claim 1: f(p) = 1 for large enough p.
+
+Proof: P(p, y) =⇒f(p) | y −f(y), contradiction for large enough p.
+
+Claim 2: f(2m + 1) = 1
+
+Proof: Let q be a prime such that q ≡2 (mod p) and f(q) = 1, which exists by Dirichlet.
+
+P(p, q) =⇒p | f(p) | qp −1, contradiction.
+
+So, f has no prime factors apart from 2 for an odd input, and f(2m + 1) | (2m + 1)2m+1, so f(2m + 1) = 1.
+
+Claim 3: f(x) = 2k
+
+Proof: Say r | f(x). Then, r | f(x) | rx −1, contradiction
+
+
+                                               3

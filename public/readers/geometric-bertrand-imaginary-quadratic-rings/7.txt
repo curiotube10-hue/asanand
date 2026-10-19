@@ -1,0 +1,54 @@
+Generalised Bertrand’s Postulate                                                       6
+
+
+Set
+                                                    c cη sin φ
+                                        δ = min  4,   4         .
+
+Then
+
+                                         δ < d(Mu,v, ∂A1,1+c)
+
+
+and
+
+                                          δ < d(Mu,v, ∂Pu,v).
+
+
+Therefore,
+
+                              B(Mu,v, δ) ⊂Pu,v ∩A1,1+c = Wu,v.
+
+                                                          □
+
+
+   Let
+                               dT(θ, θ0) = min |θ −θ0 + 2πk|, T = R/2πZ.
+                                       k∈Z
+
+
+  Lemma 3.2. The ball B(Mu,v, δ) contains an annular sector
+
+
+                                     {reiθ | r1 < r < r2, dT(θ, θ0) < ε},
+
+
+  where
+
+                                             θ0 = arg(u + vτ).
+
+
+
+Proof. Set
+                                                        c
+                                     Mu,v =  1 +     eiθ0.
+                                                2
+
+Define                                         √
+                            c
+         m = 1 +                                    r1 = m −δ      r2 = m + δ      ε =      3δ       .                           2,               2,               2,        2 pm(1 + c)
+
+Choose any point z = reiθ, where r1 < r < r2 and dT(θ, θ0) < ε. Observe that
+
+
+                       |z −Mu,v|2 = |reiθ −meiθ0|2 = (r −m)2 + 2mr (1 −cos(θ −θ0)).

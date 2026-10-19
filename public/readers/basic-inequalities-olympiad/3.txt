@@ -1,0 +1,56 @@
+  IMO 2000/2
+
+   Example 3: Prove that if xyz = 1, then
+
+                                    1           1           1
+                         x −1 +     y −1 +      z −1 +   ≤1
+                                     y            z         x
+
+   Proof: Let x = ab , y = cb and z = a.c
+   The inequality reduces to
+                                (a + b −c)(a −b + c)(−a + b + c) ≤abc
+
+  WLOG let a = max(a, b, c)
+    If a ≥b + c, then the LHS is positive but the RHS is negative, and we are done.
+   So, assume a + b > c, b + c > a, a + c > b so let a = x0 + y0, b = y0 + z0, c = z0 + x0 by Ravi substitution
+   (Think of this as constructing an incircle, and notice that the lengths of the two tangents from a point
+to the incircle are equal).
+  We need 8x0y0z0 ≤(x0 + y))(y0 + z0)(z0 + x0), which follows by AM-GM on x0 + y0, y0 + z0, z0 + x0.
+
+
+  IMO 2005/3
+
+   Example 4: Prove that if xyz ≥1, then
+
+                             x5 −x2        y5 −y2        z5 −z2
+                        +        +        ≥0
+                           x5 + y2 + z2   x2 + y5 + z2   x2 + y2 + z5
+
+
+   Proof: This is equivalent to
+
+                           x5 −x2            y5 −y2            z5 −z2
+                     1 −        + 1 −        + 1 −        ≤3
+                         x5 + y2 + z2       x2 + y5 + z2       x2 + y2 + z5
+
+                                                        1
+                   ⇐⇒(x2 + y2 + z2) · X        ≤3
+                                                    x5 + y2 + z2
+                                                               cyc
+
+  By Cauchy,
+
+                  (x5 + y2 + z2)(yz + y2 + z2) ≥(p x5yz + y2 + z2)2 ≥(x2 + y2 + z2)2
+
+   So,
+
+                      1                           y2 + z2 + yz     2(x2 + y2 + z2) + xy + yz + zx
+(x2 + y2 + z2) · X          ≤(x2 + y2 + z2) X         =                  ≤3
+                 x5 + y2 + z2                     (x2 + y2 + z2)2            x2 + y2 + z2
+                  cyc                                    cyc
+
+
+
+
+
+                                              3

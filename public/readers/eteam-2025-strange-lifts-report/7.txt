@@ -1,0 +1,48 @@
+Problem 7 Strange Lifts                                                              6
+
+  It is well known that n!    ne  n. Thus,               ≥
+
+                1                           1                      1               1                                      1
+   Å n! ã n−1      Å  nn ã                                 n−1      Å 1 ã n−1   n 1+ n−1       n     Å n ã n−1
+ lim                  = lim             = lim      lim        =n→∞  a1    ≥limn→∞  en  a1     n→∞  a1         ·  e       n→∞  e n→∞  e  a1    ∞                                           ·                                                                                             ·
+
+
+
+                  1              1                                                                                1
+       Äan ä n−1   Ä n! ä n−1                                                Äan ä n−1  Now,                  which is unbounded by our claim. However, we know             is bounded           a1           a1                                                                       a1          ≥
+above.
+
+ ⇒⇐
+  So, dA(N) is unbounded as desired. □
+
+   Note
+
+   Notice that any function of the form h(1) = c ≥1, h(n) = f(n)h(n −1) + k for k > 1 works in
+   analogous fashion, where f is a linear polynomial of the form an + b, a ≥1.
+
+(b)   dAt ̸≈0
+  Definition 2 ): At = { tn   | n ≥0}
+ We claim that there are infinitely many p that satisfy this property. In fact, all p : p ≥2, p ∈N
+satisfy this property.
+
+  As proved in 4a), every natural number has a unique base p representation for p ∈N.
+  So, consider the number pk −1 = (p −1)pk−1 + (p −1)pk−2 + · · · + (p −1).
+  dA(N) = k(p −1) →∞as k →∞. So, dAp is unbounded as desired.
+
+(c)  When is dA(N) bounded above
+
+We can rephrase this problem as finding all additive bases of finite magnitude with element 1. By
+                                                     A(n)
+Schnirelmann’s theorem[3], this is only possible when σA = inf    > 0.
+                                                      n≥1  n
+
+  More specifically, a set with Schnirelmann density ε is an additive basis of order at most  1ε  .
+
+4  Exploring dAt
+
+  Question 4: For a real number t ≥1 denote At = {1} ∪{⌊tn⌋| n ≥1}.  Alice finds sets At
+  intriguing so she wants to understand more about different speeds of approaching Bob for them.
+  Try to calculate dA precisely or give an approximation in the following cases:
+     a) A = A2 and A = A3.
+    b) A = At for t ∈N
+     c) A = At for any t ∈R ≥1.

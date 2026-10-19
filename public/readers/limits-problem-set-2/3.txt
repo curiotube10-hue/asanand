@@ -1,0 +1,52 @@
+ Q9 For (x, y) ̸= (0, 0), define
+                                            x2y + xy2
+                                  F(x, y) =                 .
+                                               x2 + y2
+
+      (a) Prove that F(x, y) →0 as (x, y) →(0, 0).
+
+     (b) Give an explicit δ(ε) such that
+
+                          0 < √︁x2 + y2 < δ  =⇒   |F(x, y)| < ε.
+
+
+      (c) Does the same conclusion hold if the numerator is replaced by xy? Justify your answer.
+
+Q10 For (x, y) ̸= (0, 0), define
+                                               x2y
+                                   G(x, y) =             .
+                                               x4 + y2
+
+     (a) Show that G(x, y) →0 along every straight line through the origin, including the
+      vertical line.
+     (b) Investigate the paths y = cx2, where c ∈R. Can you find the full 2-variable limit?
+
+      (c) For each positive integer m, determine whether
+
+                                       xmy
+                                          lim
+                                                 (x,y)→(0,0) x4 + y2
+
+      exists.
+
+4  “Batshit Crazy”
+
+Q11 For (x, y) ̸= (0, 0), define
+                                              x(y sin x)
+                                F(x, y) =
+                                           x4 + (y −sin x)2
+
+      (a) Prove, disprove or salvage if possible (PODASIP): F(x, y) tends to 0 for every straight
+      line through the origin.
+
+     (b) Find every real a such that there is a continuous path (x(t), y(t)) approaching (0, 0) as
+       t →0+, along which F(x(t), y(t)) →a. Hence decide whether a 2-variable limit exists.
+
+    P.S. Sorry if these questions feel like the classic STEP template, that’s what I’ve been doing
+nowadays so it’s all I can write.
+
+
+
+
+
+                                         3

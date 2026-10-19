@@ -1,0 +1,13 @@
+Basic bounds on dA(N)
+
+
+
+
+
+      a) Notice that Alice can take 1 step at a time to go to any floor.
+          Additionally, if Alice does so it takes N steps to reach N. So,
+       dA(N) ≤N.
+     b) Assume for the sake of contradiction
+       dA(M + N) > dA(M) + dA(N). Then, if we go M steps and
+        then N steps we can reach M + N in dA(M) + dA(N) moves,
+        which contradicts the minimality of dA.

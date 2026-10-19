@@ -1,0 +1,52 @@
+What are matrices - really?                                                             1
+
+1  Discovery
+
+
+Matrices are linear transformations: in other words, they input a vector and output a new vector. For
+
+example, consider the matrix
+                          
+                               2  0 
+                                            0  1
+
+When we input the vector ⃗v = xˆı + yˆȷ or
+                           
+                                                                               ⃗v =                               x
+                                                y
+
+the matrix outputs
+                           
+                          2  0  x= 2x
+                                     0  1    y       y
+
+Essentially, we are taking every point (x, y) in the plane to (2x, y), stretching the plane horizontally by a
+
+factor of 2.
+
+  In general, the matrix
+                          
+                              a  b 
+                                                   c  d
+
+sends ⃗v to
+                           
+                               ax + by 
+                                          cx + dy
+
+This is precisely why it is called a linear transformation.
+
+   If we work in Rn (veterans would know that this is a vector space), there is a unique matrix corresponding
+
+to every linear transformation.
+
+
+  Exercise 1.1. Find a matrix to make the following transformations.
+
+    (a) Rotate the plane by 90◦clockwise.
+
+
+    (b) Stretch the x-axis by a factor of a and y-axis by a factor of b.
+
+
+     (c) Reflect in the x-axis.

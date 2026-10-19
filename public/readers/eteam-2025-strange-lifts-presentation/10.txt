@@ -1,0 +1,16 @@
+dAt ̸≈dAt′
+
+
+
+
+   We claim that any subset of multiplicatively independent numbers
+    work. To prove this, we assume for the sake of contradiction
+    dAp ≈dAq for some multiplicatively independent p, q.
+    For the sake of contradiction assume that ∃C such that
+
+               1
+                dAp(N) −C ≤dAq(N) ≤CdAp(N) + C
+           C
+    Then,
+                1    C                C           −      ≤dAq(N) ≤C +
+            C   dAp(N)   dAp(N)       dAp(N)

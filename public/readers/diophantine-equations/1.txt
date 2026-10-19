@@ -1,0 +1,61 @@
+                   Diophantine Equations
+
+
+                                Adhiraj Singh Anand
+
+                                August 6, 2025
+
+
+1  Examples
+
+
+   Azerbaijan Senior NMO 2020
+
+  Example 1: a; b; c; d ∈Z+. Solve the equation:
+
+                                                  2a! + 2b! + 2c! = d3
+
+
+Proof: A slightly different solution.
+
+If a, b, c ≥3, d3 ≡3 (mod 7), ⇒⇐.
+WLOG a ≥b ≥c. 22(2a!−2 + 2b!−2 + 1) = d3. Thus, b! = 2 =⇒b = 2.
+
+2a! + 8 = d3. There are no perfect cubes with difference 8, so a ≤2 =⇒a = 2.
+However, 22 + 22 + 22 = 12 ̸= d3 for any d ∈Z+.
+Thus, c = 1. 2(2a!−1 + 2b!−1 + 1) = d3 =⇒b! −1 = 0.
+4(2a!−2 + 1) = d3 =⇒a = 2.
+
+Thus, (a, b, c, d) = (2, 1, 1, 2), (1, 1, 2, 2), (1, 2, 1, 2).
+
+
+AoPS solution: me
+
+
+   Serbia JBMO TST 2025 P3
+
+  Example 2: Determine all positive integers a, b and c such that
+   2 · 10a + 5b = 2025c
+
+Proof: Taking v5 on both sides gives min{a, b} = 2c.
+
+Case 1: b = 2c
+
+2 · 10a = 2025c −25c
+
+Since 20251 −251 = 2 · 103, this is the only solution by Zsig.
+
+Case 2: a = 2c
+
+2 · 102c + 5b = 2025c
+
+5b = 52c(81c −22c+1)
+
+Since 22c+1 ̸≡1 (mod 5),
+
+b = 2c which is just Case 1.
+
+
+
+
+                                               1

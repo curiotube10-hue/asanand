@@ -1,0 +1,56 @@
+What are matrices - really?                                                             2
+
+2  Multiplication
+
+
+Now, let’s discuss the most common sticking point: matrix multiplication. When we multiply the matrices
+
+A and B, we are trying to find the unique matrix AB such that
+
+
+                                         A(B⃗v) = (AB)⃗v
+
+
+Let
+                                                                            b                  q
+                     A =         B =                         a  ,      p  
+                                           c  d              r  s
+
+Then,
+                                                            + qy
+                                            B⃗v =                                 px   
+                                           rx + sy
+
+and
+                                                              + br)x + (aq + bs)y
+                               A(B⃗v) =                                 (ap          
+                                             (cp + dr)x + (cq + ds)y
+
+which is the same as applying the matrix
+
+
+                                                           + br  aq + bs
+                       AB =                               ap       
+                                            cp + dr  cq + ds
+
+
+
+  Exercise 2.1. Try to find a matrix that reflects about the x-axis and then takes x to mx + y.
+
+
+  Exercise 2.2. Do the algebra for a 3 × 3 matrix (it hurts a little) and hence convince yourself that
+
+  multiplication of 3 × 3 matrices makes sense.
+
+
+  This also helps us see why multiplication isn’t commutative. For instance, rotating by 90◦and then
+
+stretching horizontally gives a different result from stretching horizontally first and then rotating by 90◦.
+
+
+3  Further Reading
+
+
+In this handout, we have discussed the bare bones of linear algebra. If you want to explore, check out part
+
+IV of Evan Chen’s An Infinitely Large Napkin, or Sheldon Axler’s Linear Algebra Done Right.

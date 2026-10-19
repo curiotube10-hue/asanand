@@ -1,0 +1,53 @@
+Complex Bash                                                                            6
+
+
+      Finally,
+                                             (b −x)(d −t) = a(b2 −c2)
+                                        (d −x)(b −t)    c(b2 −a2)
+    Which is equal to its conjugate. So, we are done by symmetry.                   □
+
+
+   2  Practise Problems
+
+
+       I am going to be omitting the easy section, since this is not meant to be a first course in complex
+
+      bashing.
+
+
+     2.1  Medium
+
+
+       1 Let ABC be a triangle with AB < AC < BC. Let the incenter and incircle of triangle ABC be
+
+           I and ω, respectively. Let X be the point on line BC different from C such that the line through
+
+      X parallel to AC is tangent to ω. Similarly, let Y be the point on line BC different from B
+
+          such that the line through Y parallel to AB is tangent to ω. Let AI intersect the circumcircle
+            of triangle ABC at P ̸= A. Let K and L be the midpoints of AC and AB, respectively.
+         Prove that ∠KIL + ∠Y PX = 180◦.
+
+       2 Let ABC be a triangle and D, E, F be the midpoints of arcs BC, CA, AB on the circumcircle.
+
+          Line ℓa passes through the feet of the perpendiculars from A to DB and DC. Line ma passes
+
+          through the feet of the perpendiculars from D to AB and AC. Let A1 denote the intersection
+
+            of lines ℓa and ma. Define points B1 and C1 similarly. Prove that triangle DEF and A1B1C1
+
+           are similar to each other.
+
+       3 Quadrilateral APBQ is inscribed in circle ω with ∠P = ∠Q = 90◦and AP = AQ < BP. Let
+
+      X be a variable point on segment PQ. Line AX meets ω again at S (other than A). Point T
+
+             lies on arc AQB of ω such that XT is perpendicular to AX. Let M denote the midpoint of
+
+          chord ST. As X varies on segment PQ, show that M moves along a circle.
+
+       4 Let ABC be a non-isosceles triangle with incenter I whose incircle is tangent to BC, CA, AB
+
+           at D, E, F, respectively. Denote by M the midpoint of BC. Let Q be a point on the incircle
+          such that ∠AQD = 90◦. Let P be the point inside the triangle on line AI for which MD = MP.
+         Prove that either ∠PQE = 90◦or ∠PQF = 90◦.

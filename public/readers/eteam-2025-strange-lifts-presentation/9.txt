@@ -1,0 +1,9 @@
+At for t ∈N
+
+
+
+
+
+    Notice that we can replace (t + k)tn with tn+1 + k · tn, so the
+     coefficient of tn is ≤t −1. So, dAt(N) is just the sum of the digits
+     of N in base t.

@@ -1,0 +1,67 @@
+      (c) For which real numbers α does
+
+                                        lim |x|α sin(1/x)
+                                  x→0
+
+      exist? Find its value whenever it does.
+
+ Q5 (a) Prove directly from the definition that
+
+                                       3x + 1
+                                        lim     = 0.
+                            x→+∞ x2 + 1
+
+ Q6 Suppose f(x) →L and g(x) →M as x →a. A “child” writes
+
+                       |f(x)g(x) −LM| ≤|g(x)||f(x) −L| + |L||g(x) −M|
+
+     and chooses both errors to be smaller than
+
+                                              ε
+                                       2(|M| + 1).
+
+     After also ensuring |g(x)| < |M| + 1, the ”child” concludes that the result is less than ε.
+
+      (a) Explain why this estimate does not justify the conclusion for arbitrary L, M.
+
+     (b) Rectify the proof, without assuming any ordering between |L| and |M|.
+
+ Q7 Suppose f(x) →L ̸= 0 as x →a.
+
+      (a) Show that, sufficiently close to a,
+
+                                                        |L|
+                                              |f(x)| >      .
+                                               2
+
+     (b) Use this to prove directly that
+
+                                           1     1
+                                         lim    =                                   x→a f(x)   L.
+
+      (c) Let’s say f(x) →0, with f(x) ̸= 0 in some neighbourhood of a. Can 1/f(x) have a
+       finite limit? Prove or disprove it.
+
+3  “The only kinds of lemons we’re ever gonna get”
+
+ Q8 Let p be a nonzero real polynomial and let a be a root of p.
+
+      (a) Prove that
+                                             1
+                                           lim
+                                     x→a p(x)
+
+     does not exist.
+
+     (b) Write
+                               p(x) = (x −a)kq(x),     q(a) ̸= 0,
+
+     where k ≥1 is the multiplicity of the root. Determine the behaviour of 1/p(x) on each
+      side of a, in terms of the sign of q(a) and the parity of k.
+
+      (c) Give an example where both sides tend to +∞, and another where one goes to +∞
+     and the other −∞.
+
+
+
+                                         2

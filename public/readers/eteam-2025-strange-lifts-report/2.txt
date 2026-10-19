@@ -1,0 +1,57 @@
+        PROBLEM 7
+                      Strange Lifts
+
+                               Summary
+
+  This problem is set in an infinitely tall building, with our
+                                                               Question  Result
+  protagonists Alice and Bob on the ground floor and the Nth
+                                                                 1      solved
+  floor, respectively. Alice can board a lift and go up ai floors,
+                                                                 2      solved
+  where ai ∈A. The problem revolves around approximating          3      solved
+  the function dA(N), which measures the minimum number of
+                                                                 4       partially solved
+  steps Alice must take to reach Bob. We find global bounds
+                                                                 5       partially solved
+  on dA(N), approximate it for finite A, determine when it is
+                                                                 6      solved
+  unbounded, investigate dAt(N), consider A as the set of Fi-
+                                                                 7      solved
+  bonacci numbers, and suggest and explore research directions.
+
+                                 Contents
+
+Summary                                                                     1
+
+Contents                                                                     1
+
+1  Bounds on dA(N)                                                            2
+    (a)  Upper bound independent of A  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    2
+   (b)  Sub-additivity .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    2
+
+2  Approximating dA(N)                                                        3
+    (a)  For {1, a, b}  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    3
+   (b) A is finite  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    3
+    (c) A = {1} ∪{P(n) | n ≥0}   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    4
+3  dA(N) ̸≈0                                                                 5
+    (a)  dA is unbounded   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    5
+   (b)  dAt ̸≈0   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    6
+    (c)  When is dA(N) bounded above  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    6
+
+4  Exploring dAt                                                               6
+    (a)  dA2 and dA3  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    7
+   (b)  dAt for t ∈N   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    7
+    (c)  Approximation for dAt  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .    8
+
+5  Comparing dAt                                                              8
+
+6  Set of Fibonacci numbers                                                      9
+
+7  Research directions                                                          11
+    (a)  Inserting a down button  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   11
+   (b)  Unexplored research directions   .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .  .   12
+
+
+
+                                            1

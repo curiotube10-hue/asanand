@@ -1,0 +1,65 @@
+2  Cauchy-Schwarz
+
+Additionally, we will need the Cauchy-Schwarz inequality, which states that
+
+
+  Theorem 2:
+
+                   (a21 + a22 + · · · + a2n)(b21 + b22 + · · · + b2n) ≥(a1b1 + a2b2 + · · · + anbn)2
+
+
+2.1  Practice Problems
+
+   1 Prove Titu’s lemma, which states that
+
+            X                                           a21 ≥(a1 + a2 + · · · + an)2
+                                                b1      b1 + b2 + · · · + bn                                                cyc
+
+   2 Prove that if abc = 1, then a2 + b2 + c2 ≥a + b + c
+
+   3 Prove Nesbitt’s inequality, which states that
+
+                                              a               X   ≥3
+                                                       b + c   2
+                                                          cyc
+
+3  Examples
+
+Here are some examples of these theorems in Olympiad problems, in increasing order of difficulty.
+
+  RMO 2019/3
+
+   Example 1: Prove that if a + b + c = 1, then
+
+                            a              b              c         1
+                       +        +        ≤
+                           a2 + b3 + c3    b2 + a3 + c3    c2 + a3 + b3   5abc
+
+
+   Proof:
+   Homogenising, Pcyc a2+b3+c35a2bc  = Pcyc a3+b3+c3+a2b+a2c.5a2bc        Finally,
+
+            5a2bc      AM−GM        5abc                  5      AM−HM    3a + b + c
+X                ≤ X        = X 1    1    1    1    1  ≤ X      = 1    a3 + b3 + c3 + a2b + a2c                                        3bc + ab + ac
+cyc                                            cyc                                                                   cyc a                                    + a + a + b + c            cyc     5
+
+
+
+  INMO 2016/2
+
+   Example 2: If a(a3 + b3) = b(b3 + c3) = c(c3 + a3), Prove that a = b = c.
+
+
+                          a3    b3           c3
+   Proof: Notice that  c + c = a2 + a
+   Summing cyclically gives
+                                      a3    b3    c3
+                        +  +  = a2 + b2 + c2
+                                         c    a    b
+   However
+                        b3                             c3                               a4                                         b4                a3
+           +              +                 =                    +                        +                                               c4 ≥a2 + b2 + c2  + b2 + c2) ≥a2 + b2 + c2                  c    a    b    ac   ab   bc   ab + bc + ca(a2
+   Since (a −b)2 = (b −c)2 = (c −a)2 = 0, a = b = c.
+
+
+                                              2

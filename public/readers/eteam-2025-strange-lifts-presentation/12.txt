@@ -1,0 +1,16 @@
+A as the set of Fibonacci numbers
+
+
+
+    Notice that we can make some assertions from the minimality of
+   dA(N)
+   ▶We can replace fn−1 + fn with fn+1 to decrease the number of
+        moves.
+   ▶We can replace 2fn with fn+1 + fn−2, and 2f1 with 2.
+   ▶We can replace 3fn with fn−2 + fn+2 to strictly decrease the
+       number of moves. (We can also replace 3f1 with 3)
+    So, we can reduce the problem to representing any number as the
+   sum of non-consecutive Fibonacci numbers.
+   By Zeckendorf’s theorem, we can represent every number uniquely
+    as the sum of non consecutive Fibonacci numbers, using the
+    greedy algorithm.

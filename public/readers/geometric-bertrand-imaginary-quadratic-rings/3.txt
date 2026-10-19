@@ -1,0 +1,54 @@
+Generalised Bertrand’s Postulate                                                       2
+
+
+      3. min{a2, b2} < c2 < max{a2, b2}.
+
+  We now introduce a thickness condition.
+
+  Definition 2.2. An element α = a1 + a2τ is η-thick if and only if
+
+      1. |a1| ≥ηR;
+
+      2. |a2||τ| ≥ηR,
+
+
+  where
+
+                         R = pN(α) = |α|.
+
+
+   Define the continuous region
+
+
+                                       
+                           x, y ∈R,                                                                     Bτ(α, (1 + c)α) =  x + yτ                                                              .
+                         x + τy lies between α and (1 + c)α                                        
+
+Let
+
+                            Bτ(α, (1 + c)α) = Bτ(α, (1 + c)α) ∩OK.
+
+
+  Theorem 2.1. Let OK be an imaginary quadratic ring of integers. Fix 0 ≤θ1 < θ2 ≤2π, and let
+
+  Π(x; θ1, θ2) denote the number of prime elements ρ ∈OK satisfying
+
+
+                                             |ρ|2 ≤x,     θ1 < arg ρ < θ2.
+
+
+   [Sitt] gives us that
+                                 Π(x; θ1, θ2) ∼g(θ2 −θ1)  x                                          2πh    log x,
+
+  where g is the number of units in OK, and h is the class number of OK.
+
+
+  We will use the following consequence of Proposition 3.1 of [Sitt]: for any 0 < a < b and any nonempty
+
+open angular interval I = (θ1, θ2), there exists X0 > 0 such that, for every x ≥X0, the annular sector
+
+
+                                {z ∈C | ax < |z|2 < bx, arg z ∈I}
+
+
+contains a prime element of OK.

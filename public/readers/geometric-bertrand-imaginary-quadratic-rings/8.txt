@@ -1,0 +1,56 @@
+Generalised Bertrand’s Postulate                                                       7
+
+
+Since r < 1 + c and 1 −cos t ≤t2/2, we obtain
+
+                                           δ2                 δ2   3δ2
+                                 |z −Mu,v|2 <  + m(1 + c)ε2 =  +   = δ2.
+                                      4                4    4
+
+
+Therefore, z ∈B(Mu,v, δ), and hence
+
+
+                                 {reiθ | r1 < r < r2, dT(θ, θ0) < ε} ⊂Wu,v.
+
+
+Thus, Wu,v contains an annular sector of fixed radial and angular width, centred in the direction of α. □
+
+
+  Lemma 3.3. There exist finitely many nonempty open angular intervals
+
+
+                                               I0, . . . , IM−1 ⊂R/2πZ
+
+
+  depending only on ε, such that, for every θ0 ∈R/2πZ, there is an index j such that
+
+
+                                               Ij ⊂{θ | dT(θ, θ0) < ε}.
+
+
+
+Proof. Choose an integer M sufficiently large so that
+
+
+                                        2π
+                             < ε.
+                      M
+
+
+Define the open intervals
+                                  2πj  2π(j + 1)
+                                     Ij =          ,                   ,    0 ≤j < M.
+                  M   M
+
+Given any angle θ0 ∈R/2πZ, there exists an index j ∈{0, . . . , M −1} such that
+
+
+                                    2πj                               ≤θ0 ≤2π(j + 1) .
+                   M      M
+
+
+For any θ ∈Ij, the circular distance between θ and θ0 is bounded by the length of the interval. Consequently,
+
+                                          dT(θ, θ0) ≤2π < ε.
+                         M

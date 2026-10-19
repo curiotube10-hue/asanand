@@ -1,0 +1,40 @@
+Proof: Let X be the reflection of A over BD.
+Notice ∠DA′L = ∠DAL = ∠DFA, so A′ lies on (DFL).
+Similarly, ∠BA′K = ∠BAK = ∠BEK, so A′ lies on (BEK).
+Now, notice ∡A′LD + ∡A′KE = ∡A′LK + ∡A′KL = ∡KA′L, so we are done.
+
+
+AoPS solution: me
+
+
+  APMO 2024 P5
+
+  Example 4: Line ℓintersects sides BC and AD of cyclic quadrilateral ABCD in its interior points R
+   and S, respectively, and intersects ray DC beyond point C at Q, and ray BA beyond point A at P.
+   Circumcircles of the triangles QCR and QDS intersect at N ̸= Q, while circumcircles of the triangles
+  PAS and PBR intersect at M ̸= P. Let lines MP and NQ meet at point X, lines AB and CD meet
+   at point K and lines BC and AD meet at point L. Prove that point X lies on line KL.
+
+
+Proof: Notice that M is the Miquel point of complete quadrilateral ABRSPL, and N of CDSRQL.
+
+So, M, N, L, R, S are concyclic.
+
+
+                  ∡PMN = ∡PMS + ∡SMN
+                        = ∡PAS + ∡SLN
+                        = ∡BAS + ∡SRN
+                        = ∡RCD + ∡QRN
+                        = ∡RNQ + ∡QRN = ∡PQN
+
+Thus, P, M, N, Q are concyclic. Let PX ∩(MSRN) = Y , QX ∩(MSRN) = Z.
+By Reim’s theorem △LY Z and △KPQ are homothetic with centre X, so K, X, L are collinear as desired. □
+
+
+AoPS solution: me
+
+
+
+
+
+                                               2

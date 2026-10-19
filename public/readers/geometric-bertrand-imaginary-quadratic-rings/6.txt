@@ -1,0 +1,62 @@
+Generalised Bertrand’s Postulate                                                       5
+
+
+Write φ = arg τ. The boundary of Pu,v lies on the four lines
+
+
+             X = u,   X = (1 + c)u,    Y = v,    Y = (1 + c)v.
+
+
+A line of the form X = C is parallel to the direction τ. Therefore, the Euclidean distance from a point
+
+X0 + Y0τ to the line X = C is
+
+                                        |X0 −C| sin φ.
+
+
+At Mu,v, the X-coordinate is
+                                                        c
+                                X0 =  1 +    u,
+                                                 2
+
+and
+                                                                         c|u|
+                               |X0 −u| = |X0 −(1 + c)u| =       .
+                                                          2
+
+Thus, the distance from Mu,v to either line X = u or X = (1 + c)u is
+
+
+                                                     c|u|
+                                                       sin φ.
+                                           2
+
+
+Similarly, a line of the form Y = C is parallel to the real axis. Hence, the Euclidean distance from X0 +Y0τ
+
+to the line Y = C is
+
+                                              |Y0 −C| |τ| sin φ.
+
+
+At Mu,v, the Y -coordinate is
+                                                        c
+                                        Y0 =  1 +    v,
+                                                2
+
+so the distance from Mu,v to either line Y = v or Y = (1 + c)v is
+
+
+                                                      c|v||τ|
+                                                         sin φ.
+                                           2
+
+
+Consequently,
+                                                          c|u|        c|v||τ|
+                           d(Mu,v, ∂Pu,v) ≥min       sin φ,        sin φ   .
+                                              2         2
+
+Using the thickness assumptions,
+                                     d(Mu,v, ∂Pu,v) ≥cη sin φ .
+                                                     2

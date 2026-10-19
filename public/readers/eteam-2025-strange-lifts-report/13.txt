@@ -1,0 +1,17 @@
+Problem 7 Strange Lifts                                                             12
+
+
+  Taking (mod b) on both sides gives ak+1 = ck+1, completing our proof.
+
+  Thus, for A = Ab, d′A(N) is just the sum of the digits of the balanced base b representation of N.
+
+  Additionally, If ai ≥i! ∀i then dA(N) is unbounded. The proof is the same as 3a).
+
+(b)  Unexplored research directions
+
+While researching this topic, I came across several interesting research directions that I couldn’t
+explore. Here are 2 of them:
+
+   1 Given a function f(n), when can you find a set A such that dA ≈f.
+   2 Given a set A, consider all subsets B such that 1 ∈B. Find or approximate the average of
+    dA(N) over all such subsets B.

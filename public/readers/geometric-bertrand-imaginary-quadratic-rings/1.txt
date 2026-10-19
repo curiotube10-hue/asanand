@@ -1,0 +1,52 @@
+A Geometric Analogue of Bertrand’s Postulate over Imaginary Quadratic
+
+                              Rings
+
+
+                                 Authors
+
+                                  Adhiraj Singh Anand
+
+                                  August 6, 2026
+
+
+
+                                          Abstract
+
+         Bertrand’s postulate asserts that for every n > 1, there exists a rational prime p with n < p < 2n.
+
+      Fixing an integral basis (1, τ), we define a region Bτ(α, (1 + c)α) using coordinate-wise inequalities
+
+     and norm bounds. Under a thickness condition preventing the normalized basis coordinates of α from
+
+      approaching either coordinate axis, we prove that Bτ(α, (1 + c)α) contains a prime element for large
+
+     enough N(α). The proof identifies an annular sector of uniform angular and radial width in the scaled
+
+      region and applies an asymptotic angular prime distribution theorem for imaginary quadratic rings.
+
+
+1  Introduction
+
+
+Bertrand’s postulate was conjectured by Bertrand in 1845 and first proved by Chebyshev using analytic
+
+methods ([Cheb]). Erd˝os later gave an elementary proof using estimates for binomial coefficients ([Erdos]).
+
+  A natural question is whether Bertrand-type results hold in other rings of integers. In Z, the phrase
+                      √
+between “n and 2n” is well defined. In Z[  d], however, the elements form a lattice in the complex plane,
+
+so there is no unique linear order. If one only requires
+
+
+                              N(α) < N(π) < N(2α),
+
+
+then π may lie in a completely different angular direction from α. Thus, a useful analogue of Bertrand’s
+
+postulate in complex quadratic rings must include some geometric condition.
+
+   Klee, Loucks, Meek, Overcast, Stewart, and Tou studied this problem for the Gaussian integers in
+
+their paper Bertrand’s Postulate over the Gaussian Integers ([Klee]).

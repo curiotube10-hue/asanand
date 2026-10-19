@@ -1,0 +1,68 @@
+4  Problems
+
+4.1  Easy
+
+   1 If the non-negative reals x, y, z satisfy x2 + y2 + z2 = x + y + z. Prove that
+
+                           x + 1         y + 1          z + 1
+                 √      +        + √        ≥3.
+                               x5 + x + 1 py5 + y + 1     z5 + z + 1
+
+
+   2 Let a, b, c be positive real numbers such that abc = 3.2 Prove that:
+
+                                    ab      bc      ca     a + b + c
+                        +    +    ⩾                    .
+                               a + b   b + c   c + a   a3 + b3 + c3
+
+
+   3 For all positive real numbers a, b, c, prove that
+
+                            (a2 + bc)2                                             (b2 + ca)2
+                      +                             +                                                           (c2 + ab)2 ≥2abc(a + b + c)2 .
+                                b + c        c + a       a + b       ab + bc + ca
+
+
+   4 Let n > k > 1 be positive integers. Determine all positive real numbers a1, a2, . . . , an which satisfy
+
+                                    n s                n                                            kaki            X                                  = X ai = n.
+                                            (k −1)aki + 1    i=1                                        i=1
+
+
+   5 Let a, b, c be positive real numbers such that
+
+                                        ab       bc       ca
+                           +    +    = 1
+                                     1 + bc   1 + ca   1 + ab
+
+     Prove that
+                                         1    1    1   √
+                            +  +  ≥6  2
+                                            a3    b3    c3
+
+
+   6 Let a, b, c be positive reals such that abc = 1. Prove the inequality
+
+                                                2a2                                + a1              X                                   ≥3                                                             1
+                                                     b + a + 1                                                        cyc
+
+
+   7 Let a, b, c be positive real numbers such that a2 + b2 + c2 + (a + b + c)2 ≤4. Prove that
+
+                                     ab + 1     bc + 1     ca + 1
+                           +     +       ≥3.
+                                     (a + b)2    (b + c)2    (c + a)2
+
+4.2  Medium
+
+   1 Let x, y, z be real numbers, each greater than 1. Prove that
+
+                         x + 1                                     y + 1
+                      +                          +                                               z + 1 ≤x −1 + y −1 + z −1
+                             y + 1   z + 1   x + 1   y −1   z −1   x −1
+
+
+
+
+
+                                              4

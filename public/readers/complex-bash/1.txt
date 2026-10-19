@@ -1,0 +1,45 @@
+                       Complex Bash
+
+
+                                 Authors
+
+                                  Adhiraj Singh Anand
+
+                                  AugustAugust19,6, 20262025
+
+
+
+   This handout is intended as a resource for practicing unconventional and advanced problems in complex
+
+bashing. I have also noticed that several handouts have problems that are bashable, but no one in their
+
+right mind would ever bash them, so I have tried to include problems where I believe a bash is the most
+
+efficient approach.
+
+
+1  Techniques
+
+
+1.1 Warm up
+
+  Problem 1
+
+  Let ABC be a triangle with incenter I and circumcircle Ω. Let D, E, F be the midpoints of the arcs
+  ⌢  ⌢  ⌢
+  BC, CA, AB of Ωnot containing A, B, C respectively. Let D′ be the point of Ωdiametrically opposite
+  to D. Show that I, D′ and the midpoint M of EF lie on a line.
+
+Proof. Notice a = x2, b = y2, c = z2, d = −yz, e = −zx, f = −xy, j = −(xy + yz + zx), d′ = yz, and
+m = −xy−yz . Then,         2
+                                    2yz + xy + xz
+                               = 2                                          2yz+xy+xz                                ∈R
+                                                      2
+                                                          □
+
+
+  Problem 2
+
+  The foot of the altitude from vertex A of acute triangle ABC is TA. The ray drawn from A through
+
+  the circumcentre O intersects BC at RA. Let the midpoint of ARA be FA. Define TB, RB, FB, TC,

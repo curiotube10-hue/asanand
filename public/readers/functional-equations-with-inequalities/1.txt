@@ -1,0 +1,62 @@
+             Functional Equations with Inequalities
+
+
+                                Adhiraj Singh Anand
+
+                                 June 21, 2025
+
+
+1  Examples
+
+
+
+  IMO Shortlist 2023 A2
+
+  Example 1: Let f : R →R be a function such that
+
+                               f(x + y)f(x −y) ⩾f(x)2 −f(y)2
+
+    for every x, y ∈R. Assume that the inequality is strict for some x0, y0 ∈R.
+   Prove that either f(x) ⩾0 for every x ∈R or f(x) ⩽0 for every x ∈R.
+
+
+Proof:
+                      a + b a −b                   a + b  2     a −b  2
+                P            ,       =⇒f(a)f(b) ≥f      −f
+                         2     2                        2            2
+
+Let this expression be Q(a, b).
+
+
+                                                                         2          2!                                                 a + b        a −b
+                     Q(a, −b) =⇒f(a)f(−b) ≥−  f      −f
+                                                      2            2
+
+Adding gives f(a)(f(b) + f(−b)) ≥0
+
+Now, Q(x0, y0) =⇒f(x0)(f(y0) + f(−y0)) > 0.
+
+If f(x0) > 0, f(y0) + f(−y0) > 0 so Q(a, y0) =⇒f(a) ≥0
+
+If f(x0) < 0, f(y0) + f(−y0) < 0 so Q(a, y0) =⇒f(a) ≤0.
+
+
+AoPS solution: me
+
+
+  IMO Shortlist 2023 A4
+
+  Example 2: Determine all functions f : R>0 →R>0 such that
+
+                           x f(x) + f(y) ⩾  f(f(x)) + y f(y)
+
+    for every x, y ∈R>0.
+
+
+Proof: Let P(x, y) denote the assertion.
+
+P(x, x) =⇒x ≥f(f(x))
+Assume for the sake of contradiction f(f(x)) < x for some x ∈R+. Let x −f(f(x)) = z > 0.
+
+
+                                               1

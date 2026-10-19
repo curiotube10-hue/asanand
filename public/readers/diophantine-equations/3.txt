@@ -1,0 +1,33 @@
+2  Practise Problems
+
+
+Here are some practise problems, in increasing order of difficulty.
+
+   1. IMO 2006 P4
+
+     Determine all pairs (x, y) of integers such that
+
+                                         1 + 2x + 22x+1 = y2.
+
+
+   2. IMO 2015 P2
+
+     Determine all triples (a, b, c) of positive integers such that each of the numbers
+
+                                      ab −c,     bc −a,     ca −b
+
+       is a power of 2. (A power of 2 is an integer of the form 2n, where n is a non-negative integer.)
+
+   3. IMO 1988 P6
+     Let a and b be positive integers such that ab + 1 divides a2 + b2. Show that
+
+                                                  a2 + b2
+                                                 ab + 1
+
+       is the square of an integer.
+
+
+
+
+
+                                              3

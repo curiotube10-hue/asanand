@@ -1,0 +1,60 @@
+Problem 7 Strange Lifts                                                              8
+
+
+
+                                          dA(N) for N = 1 to 10000
+                   14
+
+
+                   12
+
+
+                   10
+                                          dA2(N)  86
+
+
+                    4
+
+
+                    2
+
+
+                    0
+                            0             0.2            0.4            0.6            0.8           1
+                                     N                                  ·104
+
+
+
+
+  This is just the sum of the digits of the base t representation of a number.
+
+(c)  Approximation for dAt
+
+5  Comparing dAt
+
+  Question 5: Can you find an infinite set T ⊆R ≥1 such that for any t, t′ ∈T with t ̸= t′ we
+  have dAt ̸= dAt′  . Can you find such an uncountable set T?
+
+
+  Definition 3 ): Two numbers are said to be multiplicatively independent if their only common
+  integer power is 1.
+
+
+ We claim that any set of multiplicatively independant numbers satisfies this property.
+
+  To prove this, we just need that if p ̸= q (WLOG p > q), dAp ̸≈dAq
+  For the sake of contradiction assume that ∃C such that
+
+
+                           1
+                          dAp(N)                + C                  C    −C ≤dAq(N) ≤CdAp(N)
+
+  Then,
+                           1    C               C
+                                  +                   C − dAp(N) ≤dAq(N)dAp(N) ≤C   dAp(N)
+
+  Let N = pn
+
+  Thus, dAq(pn) ≤2C ∀n
+
+ By the Senge-Strauss Theorem [2], the number of integers the sum of whose digits in each of the

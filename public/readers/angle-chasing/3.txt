@@ -1,0 +1,30 @@
+2  Practise Problems
+
+
+Here are some practise problems, in increasing order of difficulty.
+
+   1. IMO 2007 P4
+
+     In triangle ABC the bisector of angle BCA intersects the circumcircle again at R, the perpendicular
+      bisector of BC at P, and the perpendicular bisector of AC at Q. The midpoint of BC is K and the
+     midpoint of AC is L. Prove that the triangles RPK and RQL have the same area.
+
+   2. IMO 2010 P4
+
+     Let P be a point inside the triangle ABC. The lines AP, BP and CP intersect the circumcircle Γ of
+      triangle ABC again at the points K, L and M respectively. The tangent to Γ at C intersects the line
+   AB at S. Suppose that SC = SP. Prove that MK = ML.
+
+   3. IMO 2015 P3
+
+     Let ABC be an acute triangle with AB > AC. Let Γ be its circumcircle, H its orthocentre, and F
+     the foot of the altitude from A. Let M be the midpoint of BC. Let Q be the point on Γ such that
+   ∠HQA = 90◦, and let K be the point on Γ such that ∠HKQ = 90◦. Assume that the points A, B, C, K
+     and Q are all different, and lie on Γ in this order. Prove that the circumcircles of triangles KQH and
+   FKM are tangent to each other.
+
+
+
+
+
+                                              3

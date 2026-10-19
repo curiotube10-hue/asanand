@@ -1,0 +1,40 @@
+Problem 7 Strange Lifts                                                              9
+
+
+bases p and q lies below a fixed bound is finite if and only if p and q are multiplicatively independent.
+
+  So, dAq(pn)+dAp(pn) = dAq(pn)+1 ≤2C +1 for finitely many n. However, there are infinite choices
+for n, contradiction.
+
+
+
+
+
+6  Set of Fibonacci numbers
+
+
+  Question 6: Can you calculate or approximate dA for some other sets A? For example, for the
+  set of Fibonacci numbers A = {1, 2, 3, 5, 8, 13, . . . }.
+
+  Notice that we can replace 3fn with fn−2 + fn+2, 3f1 with 3 and 3f2 with f1 + f4, so we cannot
+have more than 2 of each Fibonacci number.
+
+  Say N = cnfn + cn−1fn−1 + · · · + c1f1, where ci ∈{0, 1, 2}.  If 2fn comes in the decomposition for
+n ≥2, we can replace it with fn−2 + fn+1.
+
+  Lastly, we can replace fn + fn−1 with fn+1. All of these operations either decrease or preserve the
+number of times a lift is taken.
+
+  So, we can rewrite this as the number of ways to write N with no consecutive Fibonacci numbers
+and no number repeated.
+
+
+  Theorem (Zeckendorf, with a few edits to use the greedy algorithm): Every integer
+   has a unique representation as a sum of non-consecutive distinct Fibonacci numbers, which can
+   be obtained using the greedy algorithm. (Here, f1 and f2 are not considered distinct.)
+
+
+  Proof: We divide this into 4 parts.
+
+  Claim 1: f3 + · · · + f2n−1 = f2n −1
+  Proof: f3 = 2 = f4 −1.

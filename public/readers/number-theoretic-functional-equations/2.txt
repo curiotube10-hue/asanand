@@ -1,0 +1,73 @@
+Case 2: f isn’t injective.
+
+Say f(x) = f(y) for some x ̸= y.
+
+f x(1) = f y(1), so f is periodic from x. Thus, f is bounded. Let the upper bound be C.
+
+By periodicity, we can choose a, b such that f(a) = f(b) = C. Then, P(a, b) =⇒2C ≤f a(b) + f(ab) = C2.
+
+Thus, C = 2. If f(k) = 1 for some k, then P(k, k) gives a clear contradiction.
+
+Thus, our solutions are f ≡2 and f ≡m + 1 .
+
+
+AoPS solution: me
+
+
+  INMO 2024 P4
+
+  Example 3: A finite set S of positive integers is called cardinal if S contains the integer |S| where |S|
+   denotes the number of distinct elements in S. Let f be a function from the set of positive integers to
+    itself such that for any cardinal set S, the set f(S) is also cardinal. Here f(S) denotes the set of all
+   integers that can be expressed as f(a) where a ∈S. Find all possible values of f(2024).
+
+
+Proof: S = {1} =⇒f(1) = 1
+
+S = {1, 2} =⇒f(2) ∈{1, 2}
+
+If f(2) = 1, S = {2, 2024} =⇒f(2024) ∈{1, 2}.
+
+From now, assume f(2) = 2, f(2024) ̸= 1, 2
+
+If f(3) = 2, S = {2, 3} =⇒{2, 2} is cardinal, ⇒⇐.
+
+If f(3) = 1, S = {1, 3, 2024} =⇒{1, f(2024)} is cardinal, so f(2024) = 1, 2, ⇒⇐.
+
+S = 1, 2, 3 =⇒1, 2, f(3) is cardinal, so f(3) = 3.
+Now, we claim f(n) = n ∀n ∈N.
+
+Say f(1) = 1, f(2) = 2, . . . , f(k) = k.
+
+FTSOC f(k + 1) ≤k.
+
+S = {1, 2, . . . , a−2, a, k +1} =⇒{1, 2, . . . , a−2, a, f(k +1)} is cardinal, so f(k +1) ̸= 1, 2, . . . , a−2, a ∀2 ≤
+a ≤k.
+
+And, S = {1, 2, . . . , k, k + 1} =⇒{1, 2, . . . , k, f(k + 1)} is cardinal, so f(k + 1) = k + 1.
+
+Thus, f(2024) ∈{1, 2, 2024} .
+
+
+AoPS solution: me
+
+
+   India IMOTC 2025, Day 4, P2
+
+  Example 4: Does there exist a function f : {1, 2, . . . , 2025}2 →{1, 2, . . . , 2025} such that:
+   • for any positive integer i ⩽2025, the numbers f(i, 1), f(i, 2), . . . , f(i, 2025) are all distinct, and
+   • for any positive integers i ⩽2025 and j ⩽2024, f(f(i, j), f(i, j + 1)) = i?
+
+
+Proof: Since f(i, 1), f(i, 2), . . . , f(i, 2025) are distinct, ∃k such that f(f(i, i), k) = i
+
+Notice that f(f(f(i, i), k), f(f(i, i), k + 1)) = f(i, f(f(i, i), k + 1)) = f(i, i)
+
+So, f(f(i, i), k + 1) = i, k = 2025.
+
+Say f(i, i) = i. Then, f(i, f(i, i + 1)) = i, so i = 2025 or ⇒⇐.
+
+
+
+
+                                               2

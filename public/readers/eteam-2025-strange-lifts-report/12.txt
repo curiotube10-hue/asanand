@@ -1,0 +1,59 @@
+Problem 7 Strange Lifts                                                             11
+
+
+7  Research directions
+
+
+  Question 7: Suggest and study other research directions.
+
+
+(a)  Inserting a down button
+
+One interesting research direction is the study of dA(N) when we are also allowed to go down ai steps.
+Call this new function d′A(N)
+
+  Notice that if we go ai floors up and ai floors down, then the total displacement is 0. So, either we
+go up ai stories or down.
+
+                                                              , where an = max(A).                                       an  For a finite set, we claim d′A(N) ≈N
+
+  This follows since
+
+                      1 õ N û      õ N û                 j N k
+                     an  an −an ≤  an  ≤d′A(N) ≤N ≤an an + an
+
+  Now, let’s consider A = {bk | k ≥0} for some b ∈N
+
+
+                                                                   2  Notice that if we have k·bn in our representation for k >                                                                              b  , we can replace it with bn+1−(b−k)·bn.                                                                          b
+                                                 2                                                               2                                 ≤xi ≤So, we can rephrase the problem with −  b−1
+
+  This is known as the balanced representation of a number in base b.
+
+   Note
+   Claim: Every number has a unique balanced base b representation for all b ∈N
+
+  Proof: Assume for the sake of contradiction that there is an
+
+                                          n         n
+                     N = X aibi = X cibi
+                                               i=0        i=0
+
+
+                                   b
+             2                              2where −  b−1            ≤ai, ci ≤
+  Taking (mod b) on both sides gives a0 ≡c0 (mod b) =⇒a0 = c0.
+
+  Now, assume a0 = c0, a1 = c1, . . . , ak = ck.
+
+
+
+                                         n          n
+                    N = X  aibi = X  cibi
+                                         i=k+1       i=k+1
+
+
+
+                                 n−k−1          n−k−1
+                  N = X  ai+k+1bi = X  ci+k+1bi
+                                         i=0             i=k+1

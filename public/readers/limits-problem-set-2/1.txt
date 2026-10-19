@@ -1,0 +1,58 @@
+                     Problem Set 2
+
+                             Author
+                              Adhiraj Singh Anand
+
+                               October 16, 2026
+
+
+
+   Before you begin:  Happy Gandhi Jayanti! The problems are roughly arranged in order of
+difficulty. Nevertheless, I have labelled them with quotes from some of the members of our class.
+To maximize fun, use algebra, limit laws, elementary trigonometric identities, and the squeeze
+theorem; and try to avoid L’Hˆopital’s rule, derivatives, or Taylor series.
+
+1  “Trivial”
+
+ Q1 Making sure to cancel meticulously, evaluate
+
+                                    x5 −32              x4 −1
+                               (a)   lim             ,     (b)   lim                             x→2 x −2          x→1 x3 −1.
+
+      (c) More generally, find
+                                         xn −an
+                                          lim
+                                    x→a x −a
+     where n ∈N, a ∈R and explain “crisply” why cancellation is possible.
+
+                 sin t
+ Q2 Using lim   = 1, evaluate
+           t→0   t
+
+                                     sin(3x)              1 −cos(3x)
+                            (a)   lim              (b)   lim                   ,                           x→0 tan(2x),         x→0     x2
+
+                                               sin(2x) sin(5x)
+                                        (c)   lim                         .
+                                   x→0   x sin(3x)
+
+ Q3 Prove directly from the ε–δ definition that
+
+                                     x→2(x2lim  + x) = 6.
+
+     Give an explicit choice of δ in terms of ε. Then morph your argument to prove
+
+                                   x→a(x2lim  + x) = a2 + a
+
+      for every a ∈R.
+
+2  “Well-Rounded (Get it?)”
+
+ Q4 (a) Prove the squeeze theorem using the ε–δ definition.
+
+     (b) Determine whether each limit exists with reasoning.
+
+                       lim sin(1/x),     lim x sin(1/x),     lim x sin(1/x2).
+                    x→0            x→0             x→0
+
+                                         1
