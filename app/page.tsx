@@ -44,7 +44,7 @@ const researchWriting = [
   {
     title: "Apéry Kunz Theory for numerical semigroups of fixed multiplicity",
     description:
-      "Developed a general framework for classifying symmetric and pseudo-symmetric numerical semigroups of any fixed multiplicity, refining by frobenius number modulo multiplicity, embedding dimension and minimal generating set. Authored a manuscript establishing finite algorithmic classifications and conductor-counting formulas, with explicit classifications at multiplicities 6 and 7 developed using AI-assisted symbolic exploration and computation, followed by independent computational verification. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
+      "Developed a general framework for classifying symmetric and pseudo-symmetric numerical semigroups of any fixed multiplicity, refining by frobenius number modulo multiplicity, embedding dimension and minimal generating set. Authored a manuscript establishing finite algorithmic classifications and conductor-counting formulas, with explicit classifications at multiplicities 6 and 7. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
     meta: "2026-present",
   },
   {
@@ -133,44 +133,6 @@ const honors = [
     title: "Purple Comet Mathematics Competition",
     description:
       "Team ranked 8th in India (of 60 teams) and 98th globally (of 399 teams).",
-  },
-] as const;
-
-const researchAndExposition = [
-  {
-    date: "2025–2026",
-    title:
-      "An Asymptotic Geometric Analogue of Bertrand’s Postulate in Imaginary Quadratic Rings",
-    subline:
-      "Manuscript under review, Rose-Hulman Undergraduate Mathematics Journal",
-    bullets: [
-      "Authored a mathematical manuscript examining Bertrand-type prime-existence questions in imaginary quadratic rings.",
-      "Developed a geometric result using asymptotic angular distribution of prime elements under a thickness condition; work developed with guidance from Dr. Sagar Shrivastava, Postdoctoral Research Associate at Iowa State University.",
-    ],
-  },
-  {
-    date: "2026-present",
-    title: "Apéry Kunz Theory for numerical semigroups of fixed multiplicity",
-    bullets: [
-      "Developed a general framework for classifying symmetric and pseudo-symmetric numerical semigroups of any fixed multiplicity, refining by frobenius number modulo multiplicity, embedding dimension and minimal generating set.",
-      "Authored a manuscript establishing finite algorithmic classifications and conductor-counting formulas, with explicit classifications at multiplicities 6 and 7 developed using AI-assisted symbolic exploration and computation, followed by independent computational verification. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
-    ],
-  },
-  {
-    date: "2025",
-    title: "Additive Bases in Number Theory - ETEAM, Lyon",
-    bullets: [
-      "Collaborated for more than three months on constructions and properties of additive bases and presented the team's findings at the international tournament.",
-      "Investigated the finiteness of the order of additive basis, including polynomials, powers of t, and first and second order linear recurrences.",
-      "Subsequently mentored candidates and selected the next ETEAM team through Ashoka University.",
-    ],
-  },
-  {
-    date: "2025-26",
-    title: "Formalisation of Topology in Lean",
-    bullets: [
-      "Collaborated for more than four months to contribute formal proofs of the Lebesgue number lemma, real line dimension not being zero, and covering dimension in Lean.",
-    ],
   },
 ] as const;
 
@@ -480,26 +442,6 @@ export default function Home() {
                   <div>
                     <h4>{honor.title}</h4>
                     <p>{honor.description}</p>
-                  </div>
-                </article>
-              ))}
-            </div>
-
-            <h3>RESEARCH &amp; MATHEMATICAL EXPOSITION</h3>
-            <div className="cv-list">
-              {researchAndExposition.map((item) => (
-                <article className="cv-entry" key={item.title}>
-                  <p className="cv-date">{item.date}</p>
-                  <div>
-                    <h4>{item.title}</h4>
-                    {"subline" in item ? (
-                      <p className="cv-subline">{item.subline}</p>
-                    ) : null}
-                    <ul className="plain-list cv-bullets">
-                      {item.bullets.map((bullet) => (
-                        <li key={bullet}>{bullet}</li>
-                      ))}
-                    </ul>
                   </div>
                 </article>
               ))}
