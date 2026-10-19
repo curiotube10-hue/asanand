@@ -1,0 +1,236 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[most]{tcolorbox}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{needspace}
+\tcbset{colback=black!4,colframe=black!75,boxrule=0.7pt,arc=2pt,
+ left=10pt,right=10pt,top=7pt,bottom=7pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\title{Number-Theoretic Functional Equations}
+\author{Adhiraj Singh Anand}
+\date{January 19, 2026}
+\begin{document}
+\maketitle
+% Theory intentionally omitted. Add it here when preparing the classes.
+\section{Examples}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={IMO Shortlist 2015 A2},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 1:} Determine all functions $f:\mathbb{Z}\rightarrow\mathbb{Z}$ with the property that
+\[f(x-f(y))=f(f(x))-f(y)-1\]
+holds for all $x,y\in\mathbb{Z}$.
+\end{tcolorbox}
+\textit{Proof:}
+$y=f(x)\implies f(x-f(f(x)))=-1$
+
+$y=x-f(f(x))\implies f(x+1)=f(f(x))$
+
+$x=f(y)-1\implies f(-1)+1=f(f(f(x)-1))-f(x)=f(f(x))-f(x)=f(x+1)-f(x)$
+
+So, $f=mx+c$, and matching coefficients,
+
+$m^2=m, 2mc=c+1$
+
+So, $(m,c)=(0,-1),(1,0)$
+
+$f(x) \equiv -1$ or $f(x)=x+1$
+\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/c6h1268817p34612945}{AoPS solution: me}}
+\par
+
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={ELMO 2025 P1},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 2:} Let $\mathbb{Z}_{>0}$ denote the set of positive integers. Find all functions $f \colon \mathbb{Z}_{>0} \to \mathbb{Z}_{>0}$ such that for all positive integers $m$ and $n$,
+\[f^m(n)+f(mn)=f(m)f(n).\]
+Note: $f^m(n)=\underbrace{f(f(\cdots f}_{m\text{ times}}(n)\cdots))$, that is, $f$ applied $m$ times to $n$.
+\end{tcolorbox}
+\textit{Proof:}
+$P(1,n)\implies f(1)=2$
+
+$P(m,1)\implies f^m(1)=f(m)\dots(1)$
+
+Taking $f$ on both sides gives $f^{m+1}(1)=f(f(m))$
+
+Now, we take $2$ cases.
+
+\textbf{Case 1:} $f$ is injective.
+
+$f^{m+1}(1)=f(m+1)$ by $(1)$, so $f(f(m))=f(m+1)\implies f\equiv m+1$.
+
+\textbf{Case 2:} $f$ isn't injective.
+
+Say $f(x)=f(y)$ for some $x\neq y$.
+
+$f^x(1)=f^y(1)$, so $f$ is periodic from $x$. Thus, $f$ is bounded. Let the upper bound be $C$.
+
+By periodicity, we can choose $a,b$ such that $f(a)=f(b)=C$. Then, $P(a,b)\implies 2C\le f^a(b)+f(ab)=C^2$.
+
+Thus, $C=2$. If $f(k)=1$ for some $k$, then $P(k,k)$ gives a clear contradiction.
+
+Thus, our solutions are $\boxed{f\equiv 2}$ and $\boxed{f\equiv m+1}$.
+\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/c6h3600468p35217925}{AoPS solution: me}}
+\par
+
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={INMO 2024 P4},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 3:} A finite set $\mathcal{S}$ of positive integers is called cardinal if $\mathcal{S}$ contains the integer $|\mathcal{S}|$ where $|\mathcal{S}|$ denotes the number of distinct elements in $\mathcal{S}$. Let $f$ be a function from the set of positive integers to itself such that for any cardinal set $\mathcal{S}$, the set $f(\mathcal{S})$ is also cardinal. Here $f(\mathcal{S})$ denotes the set of all integers that can be expressed as $f(a)$ where $a \in \mathcal{S}$. Find all possible values of $f(2024)$.
+\end{tcolorbox}
+\textit{Proof:}
+$S=\{1\}\implies f(1)=1$
+
+$S=\{1,2\}\implies f(2)\ \in \{1,2\}$
+
+If $f(2)=1$, $S=\{2,2024\}\implies f(2024)\in \{1,2\}$.
+
+From now, assume $f(2)=2$, $f(2024)\neq 1,2$
+
+If $f(3)=2$, $S=\{2,3\}\implies \{2,2\}$ is cardinal, $\Rightarrow\Leftarrow$.
+
+If $f(3)=1$, $S=\{1,3,2024\}\implies \{1,f(2024)\}$ is cardinal, so $f(2024)=1,2$, $\Rightarrow \Leftarrow$.
+
+$S={1,2,3}\implies {1,2,f(3)}$ is cardinal, so $f(3)=3$.
+
+Now, we claim $f(n)=n \ \forall \ n \ \in \ \mathbb{N}$.
+
+Say $f(1)=1, f(2)=2, \dots, f(k)=k$.
+
+FTSOC $f(k+1)\le k$.
+
+$S=\{1,2,\dots,a-2,a,k+1\}\implies \{1,2,\dots,a-2,a,f(k+1)\}$ is cardinal, so $f(k+1)\neq 1,2,\dots,a-2,a \ \forall \ 2 \le a \le k$.
+
+And, $S=\{1,2,\dots,k,k+1\}\implies \{1,2,\dots,k,f(k+1)\}$ is cardinal, so $f(k+1)=k+1$.
+
+Thus, $\boxed{f(2024)\in \{1,2,2024\}}$.
+\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/c6h3239268p35030816}{AoPS solution: me}}
+\par
+
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={India IMOTC 2025, Day 4, P2},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 4:} Does there exist a function $f:\{1,2,\dots,2025\}^2 \rightarrow \{1,2,\dots,2025\}$ such that:
+
+$\bullet$ for any positive integer $i \leqslant 2025$, the numbers $f(i,1),f(i,2),\dots,f(i,2025)$ are all distinct, and
+
+$\bullet$ for any positive integers $i \leqslant 2025$ and $j \leqslant 2024$, $f(f(i,j),f(i,j+1))=i$?
+\end{tcolorbox}
+\textit{Proof:}
+Since $f(i,1),f(i,2),\dots ,f(i,2025)$ are distinct, $\exists \ k$ such that $f(f(i,i),k)=i$
+
+Notice that $f(f(f(i,i),k),f(f(i,i),k+1))=f(i,f(f(i,i),k+1))=f(i,i)$
+
+So, $f(f(i,i),k+1)=i$, $k=2025$.
+
+Say $f(i,i)=i$. Then, $f(i,f(i,i+1))=i$, so $i=2025$ or $\Rightarrow\Leftarrow$.
+
+Say $f(i,i)=f(j,j)$. Then, $i=f(f(i,i),2025)=f(f(j,j),2025)=j$.
+
+So, $\exists \ i$ such that $f(i,i)=2024$. Then, $f(2024,2025)=2024$ but $f(f(2024,2024),f(2024,2025))=2024\implies f(2024,2025)=2025$, $\Rightarrow \Leftarrow$.
+\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/c6h3585200p35067198}{AoPS solution: me}}
+\par
+
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={INMO 2026 P4},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 5:} Two integers $a$ and $b$ are called companions if every prime number $p$ either divides both or none of $a,b$. Determine all functions $f:\mathbb{N}_0\to\mathbb{N}_0$ such that $f(0)=0$ and the numbers $f(m)+n$ and $f(n)+m$ are companions for all $m,n\in\mathbb{N}_0$.
+
+(Here $\mathbb{N}_0$ denotes the set of all non-negative integers.)
+\end{tcolorbox}
+\textit{Proof:}
+Solution from the contest:
+
+Denote the assertion by $P(m,n)$.
+
+$P(m,0)\implies \text{rad}(m)= \text{rad}(f(m))$. Denote this assertion by $Q(m)$.
+
+\textbf{Claim 1:}$f(1)=1$.
+
+\emph{Proof:} $Q(1)\implies \text{rad}(f(1))= \text{rad}(1)$, so $f(1)=1$. $\square$
+
+\textbf{Claim 2:}$f(p^k)=p^k$.
+
+\emph{Proof:} $Q(p^k)$ gives $f(p^k)=p^{\ell}$, and $P(p^k,1)$ gives $ \text{rad} (p^k+1)= \text{rad} (p^{\ell}+1)$, so $k=\ell$ by Zsig. $\square$.
+
+\textbf{Claim 3:}$f\equiv m$
+
+\emph{Proof:} Notice that $\gcd(p^k+m, p^k+f(m))=\gcd(p^k+m, f(m)-m)\ge \text{rad}(p^k+m)$.
+
+Since $\text{rad}(p^k+m)$ is unbounded, plugging in large enough $p,k$ gives $f(m)=m$ as desired. $\square$
+\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/c6h3753616p36976515}{AoPS solution: me}}
+\par
+
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={IMO 2025 P3},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 6:} Let $\mathbb{N}$ denote the set of positive integers. A function $f:\mathbb{N}\to\mathbb{N}$ is said to be \textit{bonza} if
+\[f(a)\ \text{divides}\ b^a-f(b)^{f(a)}\]
+for all positive integers $a$ and $b$.
+
+Determine the smallest real constant $c$ such that $f(n)\leqslant cn$ for all bonza functions $f$ and all positive integers $n$.
+\end{tcolorbox}
+\textit{Proof:}
+Notice that $P(a,a)\implies f(a)\mid a^a$. Also, $f\equiv a$ works, so from now assume $f$ isn't the identity. So, $\exists \ y$ such that $f(y)\neq y$.
+
+\textbf{Claim $1$:} $f(p)=1$ for large enough $p$.
+
+\emph{Proof:} $P(p,y)\implies f(p)\mid y-f(y)$, contradiction for large enough $p$.
+
+\textbf{Claim $2$:} $f(2m+1)=1$
+
+\emph{Proof:} Let $q$ be a prime such that $q\equiv 2\pmod p$ and $f(q)=1$, which exists by Dirichlet.
+
+$P(p,q)\implies p\mid f(p)\mid q^p-1$, contradiction.
+
+So, $f$ has no prime factors apart from $2$ for an odd input, and $f(2m+1)\mid (2m+1)^{2m+1}$, so $f(2m+1)=1$.
+
+\textbf{Claim $3$:} $f(x)=2^k$
+
+\emph{Proof:} Say $r\mid f(x)$. Then, $r\mid f(x)\mid r^x-1$, contradiction
+
+Now, $P(x,3)\implies f(x)\mid 3^x-1$, so $\nu_2(f(x))\le \nu_2(3^x-1)=\nu_2(x)+2$.
+
+Combining with claim $3$, we get $f(x)\le 4x$, which can easily be constructed.
+\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/c6h3609789p35334083}{AoPS solution: me}}
+\par
+
+\Needspace{14\baselineskip}
+\section{Practise Problems}
+Here are some practise problems, in increasing order of difficulty.
+\begin{enumerate}
+\setlength{\itemsep}{12pt}
+\Needspace{7\baselineskip}
+\item \textbf{\href{https://www.imo-official.org/problems/IMO2019SL.pdf}{IMO Shortlist 2019 A1}}\par
+Determine all functions $f:\mathbb{Z}\to\mathbb{Z}$ such that, for every pair of integers $a,b$,
+\[f(2a)+2f(b)=f(f(a+b)).\]
+\Needspace{7\baselineskip}
+\item \textbf{\href{https://www.imo-official.org/problems/IMO2014SL.pdf}{IMO Shortlist 2014 A4}}\par
+Determine all functions $f:\mathbb{Z}\to\mathbb{Z}$ satisfying
+\[f(f(m)+n)+f(m)=f(n)+f(3m)+2014\]
+for all integers $m,n$.
+\Needspace{7\baselineskip}
+\item \textbf{\href{https://www.imo-official.org/problems/IMO2013SL.pdf}{IMO Shortlist 2013 A5}}\par
+Find all functions $f:\mathbb{Z}_{\ge0}\to\mathbb{Z}_{\ge0}$ satisfying
+\[f(f(f(n)))=f(n+1)+1\]
+for every non-negative integer $n$.
+\Needspace{7\baselineskip}
+\item \textbf{\href{https://www.imo-official.org/problems/IMO2015SL.pdf}{IMO Shortlist 2015 A5}}\par
+Let $2\mathbb{Z}+1$ denote the set of odd integers. Find all functions $f:\mathbb{Z}\to2\mathbb{Z}+1$ satisfying
+\[f(x+f(x)+y)+f(x-f(x)-y)=f(x+y)+f(x-y)\]
+for all integers $x,y$.
+\Needspace{7\baselineskip}
+\item \textbf{\href{https://www.imo-official.org/problems/IMO2019SL.pdf}{IMO Shortlist 2019 N4}}\par
+A positive integer constant $C$ is given. Find all functions $f:\mathbb{Z}_{>0}\to\mathbb{Z}_{>0}$ such that
+\[a+f(b)\mid a^2+bf(a)\]
+for all positive integers $a,b$ satisfying $a+b>C$.
+\Needspace{7\baselineskip}
+\item \textbf{\href{https://www.imo-official.org/problems/IMO2014SL.pdf}{IMO Shortlist 2014 A6}}\par
+Find all functions $f:\mathbb{Z}\to\mathbb{Z}$ such that
+\[n^2+4f(n)=f(f(n))^2\]
+for every integer $n$.
+\end{enumerate}
+
+\end{document}

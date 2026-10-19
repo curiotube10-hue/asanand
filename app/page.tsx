@@ -242,8 +242,33 @@ const handoutGroups = [
       },
       {
         title: "Complex Bash",
-        meta: "9 pages · August 2026",
+        meta: "9 pages · August 2025",
         href: publicUrl("/pdfs/complex-bash.pdf"),
+        source: publicUrl("/latex/complex-bash-source.zip"),
+      },
+      {
+        title: "Number-Theoretic Functional Equations",
+        meta: "4 pages · January 2026",
+        href: publicUrl("/pdfs/number-theoretic-functional-equations.pdf"),
+        source: publicUrl("/latex/number-theoretic-functional-equations.tex"),
+      },
+      {
+        title: "Functional Equations with Inequalities",
+        meta: "2 pages · June 2025",
+        href: publicUrl("/pdfs/functional-equations-with-inequalities.pdf"),
+        source: publicUrl("/latex/functional-equations-with-inequalities.tex"),
+      },
+      {
+        title: "Diophantine Equations",
+        meta: "3 pages · August 2025",
+        href: publicUrl("/pdfs/diophantine-equations.pdf"),
+        source: publicUrl("/latex/diophantine-equations.tex"),
+      },
+      {
+        title: "Angle Chasing",
+        meta: "3 pages · November 2025",
+        href: publicUrl("/pdfs/angle-chasing.pdf"),
+        source: publicUrl("/latex/angle-chasing.tex"),
       },
     ],
   },
@@ -560,6 +585,7 @@ export default function Home() {
                         </a>
                         . <span className="item-meta">{item.meta}</span>{" "}
                         <span className="file-label">PDF</span>
+                        {"source" in item ? (<> · <a href={item.source}>LaTeX source</a></>) : null}
                       </p>
                     </li>
                   ))}

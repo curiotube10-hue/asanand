@@ -1,0 +1,11 @@
+% Layout-preserving source: requires assets/complex-bash-original.pdf.
+% The original editable mathematical source was not available.
+\documentclass{article}
+\usepackage{pdfpages,tikz}
+\begin{document}
+\includepdf[pages=1,pagecommand={\thispagestyle{empty}\begin{tikzpicture}[remember picture,overlay]
+\fill[white] ([xshift=240pt,yshift=-210pt]current page.north west) rectangle ([xshift=375pt,yshift=-230pt]current page.north west);
+\node[anchor=base,font=\large] at ([xshift=306pt,yshift=-222pt]current page.north west) {August 19, 2025};
+\end{tikzpicture}}]{assets/complex-bash-original.pdf}
+\includepdf[pages=2-]{assets/complex-bash-original.pdf}
+\end{document}

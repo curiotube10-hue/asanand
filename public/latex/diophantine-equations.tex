@@ -1,0 +1,119 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[margin=1in]{geometry}
+\usepackage[most]{tcolorbox}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{needspace}
+\tcbset{colback=black!4,colframe=black!75,boxrule=0.7pt,arc=2pt,
+ left=10pt,right=10pt,top=7pt,bottom=7pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\setlength{\emergencystretch}{2em}
+\title{Diophantine Equations}
+\author{Adhiraj Singh Anand}
+\date{August 6, 2025}
+
+\begin{document}\maketitle\section{Examples}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={Azerbaijan Senior NMO 2020},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 1:} $a;b;c;d\in\mathbb{Z^+}$. Solve the equation: $$2^{a!}+2^{b!}+2^{c!}=d^3$$
+\end{tcolorbox}
+\textit{Proof:}
+A slightly different solution.
+
+If $a, b, c\ge 3$, $d^3\equiv 3\pmod 7$, $\Rightarrow \Leftarrow$.
+
+WLOG $a\ge b\ge c$. $2^2(2^{a!-2}+2^{b!-2}+1)=d^3$. Thus, $b!=2\implies b=2$.
+
+$2^{a!}+8=d^3$. There are no perfect cubes with difference $8$, so $a\le 2\implies a=2$.
+
+However, $2^2+2^2+2^2=12\neq d^3$ for any $d\in \mathbb{Z_{+}}$.
+
+Thus, $c=1$. $2(2^{a!-1}+2^{b!-1}+1)=d^3\implies b!-1=0$.
+
+$4(2^{a!-2}+1)=d^3\implies a=2$.
+
+Thus, $(a,b,c,d)=(2,1,1,2), (1,1,2,2), (1,2,1,2)$.
+\nopagebreak[4]\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/u1205624h3566491p34806977}{AoPS solution: me}}
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={Serbia JBMO TST 2025 P3},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 2:} Determine all positive integers $a, b$ and $c$ such that
+
+$2$ $\cdot$ $10^a + 5^b = 2025^c$
+\end{tcolorbox}
+\textit{Proof:}
+Taking $v_5$ on both sides gives $\min\{a,b\}=2c$.
+
+Case 1: $b=2c$
+
+$2\cdot 10^a=2025^c-25^c$
+
+Since $2025^1-25^1=2\cdot 10^3$, this is the only solution by Zsig.
+
+Case 2: $a=2c$
+
+$2\cdot 10^{2c}+5^b=2025^c$
+
+$5^b=5^{2c}(81^c-2^{2c+1})$
+
+Since $2^{2c+1}\not\equiv 1 \pmod5$,
+
+$b=2c$ which is just Case 1.
+
+So, the only solution is $(a,b,c)=(3,2,1)$.
+\nopagebreak[4]\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/u1205624h3580450p34994023}{AoPS solution: me}}
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={USAMO 2022 P4 / USAJMO 2022 P5},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 3:} Find all pairs of primes $(p, q)$ for which $p-q$ and $pq-q$ are both perfect squares.
+\end{tcolorbox}
+\textit{Proof:}
+Let $pq-q=a^2$, $p-q=b^2$.
+
+Subtracting gives $p(q-1)=(a+b)(a-b)$. Since $a-b<a<p$ and $a+b<2a<2p$, we get $a+b=p$ and $a-b=q-1$.
+
+Finally, $p>q$, so $q=2\implies a=\frac{p+q-1}{2}=\frac{p+1}{2}\implies 8p-8=p^2+2p+1$, so $p=3$.
+
+So, the only pair $(p,q)=(3,2)$.
+\nopagebreak[4]\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/u1205624h2808839p35528269}{AoPS solution: me}}
+\par\vspace{12pt}
+\Needspace{5\baselineskip}
+\begin{tcolorbox}[breakable,title={Romanian Master of Mathematics 2023 P1},colbacktitle=black!4,coltitle=black,fonttitle=\normalfont]
+\textbf{Example 4:} Determine all prime numbers $p$ and all positive integers $x$ and $y$ satisfying $$x^3+y^3=p(xy+p).$$
+\end{tcolorbox}
+\textit{Proof:}
+Assume for the sake of contradiction $x+y=kp$.
+
+If $k=1$, $(x-y)^2=p$, which is not possible.
+
+If $k\ge 2$, $\frac{x+y}{k}+xy=p+xy\ge k(x^2-xy+y^2)\ge 2xy$, so $\frac{x+y}{k}\ge xy$, $\Rightarrow \Leftarrow$.
+
+Let $x+y=m$ and $xy=n$, so $\gcd(p,m)=1$ and $m(m^2-3n)=p(n+p)$.
+
+$\iff m^3-p^2=n(3m+p)$
+
+$\iff m^3-p^2\equiv 0\pmod{3m+p}$.
+
+Now, notice $m^3-p^2\equiv m^3-p^2+3mp+p^2\equiv m(m^2+3p)\pmod{3m+p}$.
+
+So, $3m+p\mid m^2+3p\iff 3m+p\mid 3m^2+9p-3m^2-pm\iff 3m+p\mid 9-m$.
+
+Clearly, $m=9$. From here, checking just $4$ cases gives the solutions $(p,x,y)=(8,1,19), (7,2,13), (5,4,7)$ and permutations.
+\nopagebreak[4]\par\vspace{5pt}{\footnotesize\href{https://artofproblemsolving.com/community/u1205624h3024159p35214490}{AoPS solution: me}}
+\par\vspace{12pt}\newpage
+\section{Practise Problems}
+Here are some practise problems, in increasing order of difficulty.
+\begin{enumerate}
+\item \textbf{\href{https://www.imo-official.org/assets/documents/problems/2006/2006_eng.pdf}{IMO 2006 P4}}
+
+Determine all pairs $(x,y)$ of integers such that\[1+2^x+2^{2x+1}=y^2.\]
+\item \textbf{\href{https://www.imo-official.org/assets/documents/problems/2015/2015_eng.pdf}{IMO 2015 P2}}
+
+Determine all triples $(a,b,c)$ of positive integers such that each of the numbers\[ab-c,\qquad bc-a,\qquad ca-b\]is a power of $2$. (A power of $2$ is an integer of the form $2^n$, where $n$ is a non-negative integer.)
+\item \textbf{\href{https://www.imo-official.org/assets/documents/problems/1988/1988_eng.pdf}{IMO 1988 P6}}
+
+Let $a$ and $b$ be positive integers such that $ab+1$ divides $a^2+b^2$. Show that\[\frac{a^2+b^2}{ab+1}\]is the square of an integer.
+\end{enumerate}\end{document}
