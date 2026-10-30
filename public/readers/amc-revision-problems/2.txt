@@ -1,0 +1,31 @@
+2007 AMC 10A, Problem 17
+Problem 9:Suppose that m and n are positive integers such that 75 m = n3. What is the minimum
+possible value ofm+n?
+2001 AMC 10, Problem 14
+Problem 10:A charity earns$2001 from 140 tickets. Each is sold either at an integer-dollar full
+price or at half that price. Determine the revenue from the full-price sales.
+2002 AMC 10B, Problem 16
+Problem 11:For how many integersnis n
+20−n the square of an integer?
+2022 AMC 10A, Problem 17
+Problem 12:Count the three-digit numbers abcwitha, b, c∈ {1, . . . ,9}satisfying
+0.abc= 0.a+ 0. b+ 0. c
+3 .
+Here bars over decimal digits mean infinite repetition.
+2015 AMC 10A, Problem 15
+Problem 13:Consider positive fractions x/y in lowest terms. Count those whose value increases
+by 10% when 1 is added to both numerator and denominator.
+3. Miscellaneous
+2007 AMC 10A, Problem 20
+Problem 14:Suppose that the numberasatisfies the equation 4 =a+a −1. What is the value of
+a4 +a −4?
+2001 AMC 12, Problem 12
+Problem 15:How many positive integers not exceeding 2001 are multiples of 3 or 4 but not 5?
+2012 AMC 10A, Problem 10
+Problem 16:A circle is partitioned into 12 sectors whose angles, in degrees, are integers forming
+an arithmetic progression. How small can the least sector angle be?
+2013 AMC 10B, Problem 17
+Problem 17:Alex starts with 75 red and 75 blue tokens. A trade converts two reds into one silver
+and one blue; another converts three blues into one silver and one red. Trading continues until
+neither trade is possible. How many silver tokens remain?
+AMC Revision 2

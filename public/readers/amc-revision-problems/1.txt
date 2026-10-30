@@ -1,0 +1,34 @@
+AMC Revision
+Adhiraj Singh Anand·October 28, 2026
+1. Revision of inequalities: AM–GM
+2000 AMC 12, Problem 12
+Problem 1:Let A, M, and C be nonnegative integers such that A + M + C = 12. What is the
+maximum value of
+A·M·C+A·M+M·C+C·A?
+2003 AMC 12A, Problem 24
+Problem 2:Ifa≥b >1, what is the largest possible value of log a( a
+b ) + logb( b
+a)?
+2016 AMC 12B, Problem 15
+Problem 3:Label the six faces of a cube with 2 , 3, 4, 5, 6, 7, using each number once. At every
+vertex, multiply the labels on its three incident faces. Maximise the sum of the eight resulting
+products.
+2020 AMC 12B, Problem 22
+Problem 4:What is the maximum value of
+(2t −3t)t
+4t
+for real values oft?
+2023 AMC 12A, Problem 23
+Problem 5:How many ordered pairs of positive real numbers (a, b) satisfy the equation
+(1 + 2a)(2 + 2b)(2a+b) = 32ab?
+2016 AMC 12A, Problem 24
+Problem 6:Among positive real parameters a, b for which x3 −ax 2 + bx−a has three real roots,
+choose the smallest possiblea. At this minimum,bis unique. Determineb.
+2. Revision of Diophantine equations
+2016 AMC 10A, Problem 14
+Problem 7:How many ways are there to write 2016 as the sum of twos and threes, ignoring order?
+2006 AMC 10A, Problem 22
+Problem 8:Two farmers value each pig at$300 and each goat at$210. They settle debts by
+transferring these animals, with animals also allowed as change. What is the smallest positive debt
+they can settle?
+AMC Revision 1

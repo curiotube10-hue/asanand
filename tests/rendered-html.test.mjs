@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import test from "node:test";
 
 const pdfFiles = [
+  "amc-revision-problems.pdf",
   "basic-inequalities-olympiad.pdf",
   "complex-bash.pdf",
   "eteam-2025-strange-lifts-presentation.pdf",

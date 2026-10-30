@@ -201,6 +201,11 @@ const handoutGroups = [
     description: `Handouts for IOQM and AMC 10 classes at Cheenta and two-hour morning Olympiad sessions taught as ${schoolRole}.`,
     items: [
       {
+        title: "AMC Revision: Inequalities and Diophantine Equations",
+        meta: "2 pages · October 2026",
+        href: publicUrl("/pdfs/amc-revision-problems.pdf"),
+      },
+      {
         title: "Basic Inequalities in Olympiad Problems",
         meta: "6 pages · June 2025",
         href: publicUrl("/pdfs/basic-inequalities-olympiad.pdf"),
