@@ -46,11 +46,13 @@ test("server-renders the complete mathematics portfolio", async () => {
   );
   assert.match(html, /Hi! I’m Adhiraj, a high school student at Delhi Public School, R.K. Puram, living in Gurugram\./);
   assert.match(html, /My primary interest is mathematics, mostly number theory\./);
-  assert.match(html, /I’m deeply engaged with 10\+ students through the Cheenta math circles programme/);
+  assert.match(html, /I volunteer to teach IOQM and AMC 10 classes to students across India through Cheenta/);
   assert.match(html, /plonking pins in GeoGuessr\./);
-  assert.match(html, /Site made with the help of ChatGPT 6\.1/);
+  assert.doesNotMatch(html, /tel:|93196\s*00311|ChatGPT 6\.1|site-credit/);
   assert.match(html, /Predicted: 98\.17%/);
-  assert.match(html, /Director, MatSoc, Delhi Public School R.K. Puram/);
+  const visibleHtml = html.replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, "");
+  assert.equal(visibleHtml.match(/Director, Mathematical Society, Delhi Public School, R.K. Puram/g)?.length, 3);
+  assert.match(html, /Teach Olympiad algebra to students in classes 8–10/);
   assert.match(html, /Limits — Problem Set 2/);
   assert.match(html, /href="\/pdfs\/limits-problem-set-2\.pdf"/);
   assert.doesNotMatch(html, /Lean’s Math Library|2025–present/);

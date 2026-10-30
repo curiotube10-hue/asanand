@@ -5,6 +5,7 @@ export const dynamic = "force-static";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
 const publicUrl = (path: string) => `${basePath}${path}`;
+const schoolRole = "Director, Mathematical Society, Delhi Public School, R.K. Puram";
 
 function InlineMath({ children }: { children: string }) {
   return (
@@ -45,7 +46,7 @@ const researchWriting = [
   {
     title: "Apéry Kunz Theory for numerical semigroups of fixed multiplicity",
     description:
-      "Developed a general framework for classifying symmetric and pseudo-symmetric numerical semigroups of any fixed multiplicity, refining by frobenius number modulo multiplicity, embedding dimension and minimal generating set. Authored a manuscript establishing finite algorithmic classifications and conductor-counting formulas, with explicit classifications at multiplicities 6 and 7. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
+      "Used Apéry sets and a reflection involution to classify symmetric and pseudo-symmetric numerical semigroups of multiplicities 6 and 7. Developed a general algorithm for classifying symmetric numerical semigroups of fixed multiplicity, exploring relationships between multiplicity, embedding dimension and the structure of gaps. Mentored by Dr. Amitabha Tripathi, Professor of Mathematics at IIT Delhi.",
     meta: "2026-present",
   },
   {
@@ -157,16 +158,16 @@ const mathematicsPrograms = [
 
 const mathematicalCommunity = [
   {
-    title: "Director, MatSoc, Delhi Public School R.K. Puram",
+    title: schoolRole,
     bullets: [
-      "Prepared notes and problem sets on complex-coordinate geometry, inequalities and functional equations for two-hour morning Olympiad sessions at school.",
+      "Teach Olympiad algebra to students in classes 8–10 and prepare notes and problem sets on complex-coordinate geometry, inequalities and functional equations for two-hour morning Olympiad sessions at school.",
     ],
   },
   {
     date: "2026-present",
     title: "Math Circles, Cheenta",
     bullets: [
-      "Led over 12 problem-solving sessions with students, focusing on an AMC level warm-up and a previous TC or SL problem afterwards. Helped at least 5 people qualify for the regional math Olympiad.",
+      "Volunteer to teach IOQM and AMC 10 classes to students across India. Prepare lectures and problem sets, adapt sessions to students’ interests, and encourage them to explain and challenge mathematical ideas through discussion and one-on-one support.",
     ],
   },
 ] as const;
@@ -175,7 +176,7 @@ const handoutGroups = [
   {
     id: "school-handouts",
     label: "School",
-    description: "Director, Mathematical Society, Delhi Public School, R.K. Puram",
+    description: `${schoolRole}. Teach Olympiad algebra to classes 8–10 and write notes and problem sets for students at school.`,
     items: [
       {
         title: "What Are Matrices — Really?",
@@ -197,7 +198,7 @@ const handoutGroups = [
   {
     id: "olympiad-handouts",
     label: "Olympiad",
-    description: "Handouts for Math Circles at Cheenta and two-hour morning Olympiad sessions at Delhi Public School, R.K. Puram.",
+    description: `Handouts for IOQM and AMC 10 classes at Cheenta and two-hour morning Olympiad sessions taught as ${schoolRole}.`,
     items: [
       {
         title: "Basic Inequalities in Olympiad Problems",
@@ -281,9 +282,10 @@ export default function Home() {
                   Frobenius coin problem, and questions about primes in imaginary
                   quadratic rings. I also enjoy discussing problems with peers
                   and students and writing handouts that explain the motivation
-                  behind a solution. I’m deeply engaged with 10+ students through
-                  the Cheenta math circles programme and teach Olympiad Algebra
-                  to classes 8–10 as Director of the DPS RKP Mathematical Society.
+                  behind a solution. I volunteer to teach IOQM and AMC 10
+                  classes to students across India through Cheenta and teach
+                  Olympiad algebra to classes 8–10 as Director of the Mathematical
+                  Society at Delhi Public School, R.K. Puram.
                 </p>
                 <p>
                   Lately, I’ve also become interested in understanding weather
@@ -295,8 +297,6 @@ export default function Home() {
                   GeoGuessr.
                 </p>
                 <p className="contact-line">
-                  <a href="tel:+919319600311">+91 93196 00311</a>
-                  <span aria-hidden="true">·</span>
                   <a href="mailto:curiotube10@gmail.com">
                     curiotube10@gmail.com
                   </a>
@@ -327,12 +327,6 @@ export default function Home() {
                 it generates the exact same cyclic group as the number 3.”
               </p>
             </aside>
-            <p className="site-credit">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-                <path d="m12 3 2.6 6.4L21 12l-6.4 2.6L12 21l-2.6-6.4L3 12l6.4-2.6L12 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round" />
-              </svg>
-              <span>Site made with the help of ChatGPT 6.1</span>
-            </p>
           </section>
 
           <section id="writings" className="section">
@@ -392,9 +386,7 @@ export default function Home() {
             <div className="cv-heading">
               <h3 className="cv-person-name">ADHIRAJ SINGH ANAND</h3>
               <p className="cv-contact-line">
-                <span>Gurgaon, India</span>
-                <span aria-hidden="true">|</span>
-                <a href="tel:+919319600311">+91 93196 00311</a>
+                <span>Gurugram, India</span>
                 <span aria-hidden="true">|</span>
                 <a href="mailto:curiotube10@gmail.com">
                   curiotube10@gmail.com
@@ -546,7 +538,7 @@ export default function Home() {
 
         <footer className="site-footer">
           <p>
-            Adhiraj Singh Anand · Gurgaon, India ·{" "}
+            Adhiraj Singh Anand · Gurugram, India ·{" "}
             <a href="mailto:curiotube10@gmail.com">
               curiotube10@gmail.com
             </a>
